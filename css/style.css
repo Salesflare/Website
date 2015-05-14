@@ -1,0 +1,11 @@
+.whitepaper{
+	display: none;
+}
+
+
+
+@media (min-width: 992px) { 
+	.whitepaper{
+		display: block;
+	}
+}
