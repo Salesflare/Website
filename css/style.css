@@ -1,11 +1,2 @@
-.whitepaper{
-	display: none;
-}
-
-
-
-@media (min-width: 992px) { 
-	.whitepaper{
-		display: block;
-	}
-}
+div{text-align:center}.container{width:560px;padding:0}.sf-whitepaper{display:none}.sf-hero{background-color:#3cb6e3}@media (min-width: 992px){.container{width:980px}.sf-whitepaper{display:block}}
+/*# sourceMappingURL=style.css.map */
