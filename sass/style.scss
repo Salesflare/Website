@@ -1,10 +1,14 @@
 $md-screen: 992px;
 $xs-screen: 728px;
 
-div{
-	text-align: center;
-}
+.row{
+	margin: 0;
+	padding: 0;
 
+	[class*="col-"]{
+		padding: 0;
+	}
+}
 .container{
 	width: 560px;
 	padding: 0;
@@ -18,13 +22,21 @@ div{
 	background-color: #3cb6e3;
 }
 
+.no-mobile{
+	display: none;
+}
 @media (min-width: $md-screen) { 
 	.container{
 		width: 980px;
 	}
 
-	.sf-whitepaper{
-		display: block;
+	.no-mobile{
+		display: inherit;
+	}
+
+	.sf-logos .row{
+		width: 740px;
+		margin: 0 auto;
 	}
 
 }

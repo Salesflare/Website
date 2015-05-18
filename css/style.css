@@ -1,2 +1,31 @@
-div{text-align:center}.container{width:560px;padding:0}.sf-whitepaper{display:none}.sf-hero{background-color:#3cb6e3}@media (min-width: 992px){.container{width:980px}.sf-whitepaper{display:block}}
+.row {
+  margin: 0;
+  padding: 0; }
+  .row [class*="col-"] {
+    padding: 0; }
+
+.container {
+  width: 560px;
+  padding: 0; }
+
+.sf-whitepaper {
+  display: none; }
+
+.sf-hero {
+  background-color: #3cb6e3; }
+
+.no-mobile {
+  display: none; }
+
+@media (min-width: 992px) {
+  .container {
+    width: 980px; }
+
+  .no-mobile {
+    display: inherit; }
+
+  .sf-logos .row {
+    width: 740px;
+    margin: 0 auto; } }
+
 /*# sourceMappingURL=style.css.map */
