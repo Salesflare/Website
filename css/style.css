@@ -1,3 +1,39 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  color: #838d8f;
+  font-family: 'PT Serif';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat'; }
+
+h1 {
+  font-size: 46px;
+  line-height: lhpx; }
+
+h2 {
+  font-size: 36px;
+  line-height: lhpx; }
+
+h3 {
+  font-size: 22px;
+  line-height: lhpx; }
+
+h4 {
+  font-size: 18px;
+  line-height: lhpx; }
+
+h5 {
+  font-size: 46px;
+  line-height: lhpx; }
+
+h6 {
+  font-size: 46px;
+  line-height: lhpx; }
+
 .row {
   margin: 0;
   padding: 0; }
@@ -8,16 +44,49 @@
   width: 560px;
   padding: 0; }
 
-.sf-whitepaper {
-  display: none; }
+.sf-header {
+  background-color: #3cb6e3;
+  color: #FFFFFF;
+  padding-top: 27px; }
+  .sf-header .sf-logo {
+    width: 48px; }
+  .sf-header .sf-menu {
+    margin-left: 180px;
+    text-transform: uppercase;
+    font-family: 'Montserrat'; }
+    .sf-header .sf-menu ul {
+      padding: 17px 0 0 0;
+      margin: 0;
+      list-style: none; }
+      .sf-header .sf-menu ul li {
+        display: inline;
+        margin-right: 60px; }
+        .sf-header .sf-menu ul li a {
+          color: #ffffff;
+          text-decoration: none;
+          line-height: 19.5px; }
+      .sf-header .sf-menu ul li:last-child {
+        margin-right: 0px; }
 
 .sf-hero {
-  background-color: #3cb6e3; }
+  background-color: #3cb6e3;
+  color: #FFFFFF; }
 
 .no-mobile {
   display: none; }
 
 @media (min-width: 992px) {
+  body {
+    font-size: 14px;
+    line-height: 18.2px; }
+
+  .sf-header {
+    padding-top: 50px; }
+    .sf-header .sf-menu {
+      margin-left: 141px;
+      text-transform: uppercase;
+      font-size: 13px; }
+
   .container {
     width: 980px; }
 
