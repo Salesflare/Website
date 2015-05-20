@@ -2,23 +2,33 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 $md-screen: 992px;
-$xs-screen: 728px;
+$xs-screen: $md-screen - 1;
 
 @mixin heading($h, $fs, $lh){
 	h#{$h}{
 		font-size: #{$fs}px;
-		line-height: #{lh}px;
-
+		line-height: #{$lh}px;
+		font-weight: 700;
+		margin: 0;
 		@content
 	}	
 }
 
+.uppercase{
+	text-transform: uppercase;
+}
+
+.styless-anchor{
+	color: #ffffff;
+	text-decoration: none;
+}	
+
 body{
+	-webkit-font-smoothing: antialiased !important;
 	color: #838d8f;
 	font: {
 		family: 'PT Serif';
 		size: 22px;
-		weight: 400;
 	};
 
 	line-height: 34px;
@@ -30,7 +40,7 @@ h1,h2,h3,h4,h5,h6{
 	};
 }
 
-@include heading(1, 46, 59.8) {};
+@include heading(1, 44, 59.8) {};
 @include heading(2, 36, 26.4) {};
 @include heading(3, 22, 26.4) {};
 @include heading(4, 18, 13.2) {};
@@ -58,50 +68,145 @@ h1,h2,h3,h4,h5,h6{
 	color: #FFFFFF;
 	padding-top: 27px;
 	
-	.sf-logo{
-		width: 48px;
-	}
+	.sf-navbar{
+		@extend .uppercase;	
 
-	.sf-menu{
-		margin-left: 180px;
-		text-transform: uppercase;
 		font: {
 			family: 'Montserrat';
 		}
 
-		ul{
-			padding: 17px 0 0 0;
-			margin: 0;
-			list-style: none;
-			li{
-				display: inline;
-				margin-right: 60px;
-				a{
-					color: #ffffff;
-					text-decoration: none;
-					line-height: 19.5px;
-				}
-			}
+		.sf-logo{
+			width: 48px;
+		}
 
-			li:last-child{
-				margin-right: 0px;
+		.sf-menu{
+			margin-left: 141px;
+
+			ul{
+				padding: 13px 0 0 0;
+				margin: 0;
+				list-style: none;
+				li{
+					display: inline;
+					margin-right: 60px;
+
+					&:last-child{
+						margin-right: 0px;
+					};
+
+					a{
+						@extend .styless-anchor;
+						line-height: 19.5px;
+					};
+
+
+				}
+
+				
+			}
+		}
+
+		.sf-nav-button{
+			margin: {
+				left: 201px;
+				top: 17px;
+			};
+
+			a{
+				@extend .styless-anchor;
+
+				font-size: 13px;
+				border: 2px {
+					style: solid;
+					color: rgba(255, 255, 255, 0.6);
+				}
+
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+				padding: 13px 44px 13px 43px;
 			}
 		}
 	}
 
+	hr{
+		margin:{
+			top: 20px;
+			bottom: 44px;
+		};
+
+		background-color:  rgba(255, 255, 255, 0.3);
+		height: 2px;
+		border-top: 0 !important;
+	}
+
+	//hero
+	.sf-hero{
+		background-color: #3cb6e3;
+		color: #FFFFFF;
+
+		h1{
+			width: 508px;
+		}
+
+		p{
+			color:  rgba(255, 255, 255, 0.75);
+			font-size: 36px;
+			line-height: 48px;
+		}
+
+		a.sf-hero-button{
+			@extend .uppercase;
+			@extend .styless-anchor;
+			display: block;
+			text-align: center;
+			
+
+			background-color: #e74c3c;
+			width: 300px;
+			height: 70px;
+
+			margin: 0 auto;
+			padding-top: 28px;
+			
+			font-family: 'Montserrat';
+			color:  #ffffff;
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 12px;
+
+			-webkit-border-radius: 30px;
+			-moz-border-radius: 30px;
+			border-radius: 30px;
+			
+			
+		}
+
+		.mockup{
+			text-align: center;
+		}
+	}
 }
 
-//hero
-.sf-hero{
-	background-color: #3cb6e3;
-	color: #FFFFFF;
+
+
+
+// MOBILE CLASSES
+@media (max-width: $xs-screen) { 
+	.no-mobile{
+		display: none !important;
+	}
+
+	.above-mockup{
+		position: relative;
+		bottom: 164px;
+		margin-bottom: -114px;
+	}
 }
 
 
-.no-mobile{
-	display: none;
-}
 
+// TABLETS AND DESKTOPS
 @media (min-width: $md-screen) { 
 	body{
 		font: {
@@ -111,32 +216,86 @@ h1,h2,h3,h4,h5,h6{
 		line-height: 18.2px;
 	}
 
+	.container{
+		width: 980px;
+	}
+
 	.sf-header{
 		padding-top: 50px;
 
 		//menu
 		.sf-menu{
 			margin-left: 141px;
-			text-transform: uppercase;
 
 			font:{
 				size: 13px;
+			};
+
+			ul {
+				padding-top: 16px;
+
+			};
+		}
+
+		hr{
+			margin-top: 18px;
+			margin-bottom: 62px;
+			height: 1px;
+		}
+
+		.sf-hero{
+			h1{
+				margin: {
+					top: 156px;
+				}
+			}
+
+			p{
+				font-size: 23px;
+				line-height: 31.44px;
+				width: 466px;
+				margin-top: 28px;
+				margin-left: 2px;
+			}
+
+			a.sf-hero-button{
+				width: 180px;
+				height: 45px;
+				font-size: 10px;
+				line-height: 12px;
+
+				padding-top: 19px;
+				margin: 48px 0 0 1px;
+					
+				
 			}
 		}
 
-	}
+		.behind-mockup{
+			background: {
+				image: url('../img/faces.png') ;
+				repeat: no-repeat;
+			}
+			text-align: left;
+			position: relative;
+			width: 519px;
+			height: 620px;
 
-	.container{
-		width: 980px;
-	}
-
-	.no-mobile{
-		display: inherit;
+			img{
+				position: absolute;
+			}
+		}
 	}
 
 	.sf-logos .row{
 		width: 740px;
 		margin: 0 auto;
 	}
+
+	//useful classes
+	.only-mobile{
+		display: none !important; 
+	}
+	//end of useful classes
 
 }
