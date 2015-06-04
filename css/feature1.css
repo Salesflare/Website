@@ -286,5 +286,51 @@ div {
 
   .only-mobile {
     display: none !important; } }
+.sf-header {
+  background-image: url("../img/hero-feature1.png");
+  background-size: cover;
+  background-position-x: -532px; }
+  .sf-header hr {
+    margin-bottom: 128px; }
+  .sf-header .sf-hero {
+    padding-bottom: 30px; }
+    .sf-header .sf-hero h1 {
+      font-size: 46px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 22px; }
+    .sf-header .sf-hero p {
+      font-size: 36px;
+      color: rgba(255, 255, 255, 0.75);
+      text-align: center; }
+    .sf-header .sf-hero .arrow {
+      margin-top: 22px;
+      margin-bottom: 30px; }
+      .sf-header .sf-hero .arrow.right {
+        text-align: left;
+        padding-left: 10px; }
+      .sf-header .sf-hero .arrow.left {
+        text-align: right;
+        padding-right: 10px; }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 991px) {
+  .sf-hero p {
+    margin-bottom: 209px; } }
+@media (min-width: 992px) {
+  .sf-header {
+    background-position-x: 0px; }
+    .sf-header .sf-hero {
+      padding-bottom: 135px; }
+      .sf-header .sf-hero h1 {
+        margin-bottom: 13px; }
+      .sf-header .sf-hero p {
+        font-size: 24px; }
+      .sf-header .sf-hero .arrow {
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 22px; }
+        .sf-header .sf-hero .arrow.right {
+          text-align: right; } }
+
+/*# sourceMappingURL=feature1.css.map */

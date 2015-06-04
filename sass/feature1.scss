@@ -1,0 +1,92 @@
+@import "style.scss";
+@import "assets/variables";
+
+.sf-header{
+	background: {
+		image: url('../img/hero-feature1.png');
+		size: cover;
+		position-x: -532px;
+	};
+	
+	hr{
+		margin-bottom: 128px;
+	}
+
+	.sf-hero{
+		padding-bottom: 30px;
+
+		h1{
+			font: {
+				size: 46px;
+				weight: 700;
+			}
+			color: #ffffff;
+			text-align: center;
+			margin-bottom: 22px;
+		}
+
+		p{
+			font-size: 36px;
+			color:  rgba(255, 255, 255, 0.75);
+			
+			text-align: center;
+		}
+
+		.arrow{
+			&.right{
+				text-align: left;
+				padding-left: 10px;
+			}
+
+			&.left{
+				text-align: right;
+				padding-right: 10px;
+			}
+
+			margin-top: 22px;
+			margin-bottom: 30px
+		}
+	}
+
+}
+
+@media (max-width: $xs-screen) {
+	.sf-hero{
+		p{
+			margin-bottom: 209px;
+		}
+	}
+}
+
+@media (min-width: $md-screen) {
+	.sf-header{
+		background: {
+			position-x: 0px;
+		}
+
+		.sf-hero{
+			padding-bottom: 135px;
+
+			h1{
+				margin-bottom: 13px;
+			}
+			p{
+				font-size: 24px;
+			}
+
+			.arrow{
+				&.right{
+					text-align: right;
+				}
+
+				padding: {
+					
+					left: 0;
+					right: 0;
+				}
+				
+				margin-top: 22px;
+			}
+		}
+	}
+}
