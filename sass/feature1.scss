@@ -3,9 +3,8 @@
 
 .sf-header{
 	background: {
-		image: url('../img/hero-feature1.png');
+		image: url('../img/hero-feature1-mobile.png');
 		size: cover;
-		position-x: -532px;
 	};
 	
 	hr{
@@ -50,6 +49,70 @@
 
 }
 
+.sf-how-works{
+	background-color: #ffffff;
+	
+	padding: {
+		top: 39px;
+		bottom: 35px;
+	}
+
+	.row{
+		width: 538px;
+		margin: {
+			left: 38px;
+			bottom: 35px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	h3{
+		color: #3c3d41;
+		margin-bottom: 23px;
+	}
+
+	.box{
+		border-width: 1px;
+		border-color:  #eaeaea;
+		border-style: solid;
+		background-color:  #f9f9f9;
+		box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.05);
+
+		width: 439px;
+
+		padding: {
+			right: 42px;
+			left: 59px;
+			top: 30px;
+			bottom: 29px;
+		}
+		
+		margin-bottom: 24px;
+
+		.actions.content, .row{
+			width: 100%;
+			margin: 0;
+		}
+
+		.actions.content{
+			.actions.row{
+				font:{
+					family: Montserrat;
+					size: 18px; 
+					weight: 700;
+				}
+				letter-spacing: 1.2px;
+				color:  #3cb6e3;
+			}
+		}
+
+	}
+
+}
+
 @media (max-width: $xs-screen) {
 	.sf-hero{
 		p{
@@ -61,7 +124,7 @@
 @media (min-width: $md-screen) {
 	.sf-header{
 		background: {
-			position-x: 0px;
+			image: url('../img/hero-feature1.png');
 		}
 
 		.sf-hero{
@@ -87,6 +150,20 @@
 				
 				margin-top: 22px;
 			}
+		}
+	}
+
+	.sf-how-works{
+		.row{
+			width: 500px;
+			margin:{
+				left: 240px;
+			}
+		}
+
+		p{
+			font-size: 20px;
+			line-height: 26px;
 		}
 	}
 }
