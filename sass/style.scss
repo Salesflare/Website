@@ -106,7 +106,7 @@ div{
 		}
 
 		.sf-menu{
-			margin-left: 141px;
+			margin-left: 185px;
 
 			ul{
 				padding: 13px 0 0 0;
@@ -116,7 +116,7 @@ div{
 					display: inline;
 					margin-right: 60px;
 
-					&:last-child{
+					&.no-margin-right, &:last-child{
 						margin-right: 0px;
 					};
 
@@ -425,9 +425,10 @@ div{
 	}
 
 	.input-group{
+		margin-top: 4px;
+		
 		input{
 			height: 65px;
-			margin-top: 4px;
 			padding: {
 				left: 27px;
 				bottom: 23px;
@@ -558,6 +559,11 @@ div{
 
 	.sf-logos{
 		text-align: center;
+		
+		img.no-margin-mobile{
+			margin-right: 0;
+		}	
+
 		img.second-row{
 			margin-top: 40px;
 		}
@@ -607,7 +613,7 @@ div{
 		padding-top: 50px;
 		//menu
 		.sf-menu{
-			margin-left: 141px;
+			margin-left: 141px !important;
 
 			font:{
 				size: 13px;
@@ -695,7 +701,7 @@ div{
 
 	.sf-logos {
 		.row{
-			width: 755px;
+			width: 756px;
 		}
 	}
 
@@ -832,11 +838,19 @@ div{
 		
 		.l1{
 			margin: 0 36px;
+
+			li{
+				margin-bottom: 24px;
+			}
 		}
 
 		.l2{
 			margin-left: 31px;
 			margin-right: 61px;
+
+			li{
+				margin-bottom: 17px;
+			}
 		}
 
 		.news{

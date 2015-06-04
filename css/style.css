@@ -95,7 +95,7 @@ div {
     .sf-header .sf-navbar .sf-logo {
       width: 48px; }
     .sf-header .sf-navbar .sf-menu {
-      margin-left: 141px; }
+      margin-left: 185px; }
       .sf-header .sf-navbar .sf-menu ul {
         padding: 13px 0 0 0;
         margin: 0;
@@ -103,7 +103,7 @@ div {
         .sf-header .sf-navbar .sf-menu ul li {
           display: inline;
           margin-right: 60px; }
-          .sf-header .sf-navbar .sf-menu ul li:last-child {
+          .sf-header .sf-navbar .sf-menu ul li.no-margin-right, .sf-header .sf-navbar .sf-menu ul li:last-child {
             margin-right: 0px; }
           .sf-header .sf-navbar .sf-menu ul li a {
             line-height: 19.5px; }
@@ -295,17 +295,18 @@ div {
   .sf-news p {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.6); }
-  .sf-news .input-group input {
-    height: 65px;
-    margin-top: 4px;
-    padding-left: 27px;
-    padding-bottom: 23px;
-    padding-top: 25px;
-    font-size: 17px;
-    line-height: 20.4px; }
-  .sf-news .input-group .input-group-btn .btn-default {
-    width: 66px;
-    height: 65px; }
+  .sf-news .input-group {
+    margin-top: 4px; }
+    .sf-news .input-group input {
+      height: 65px;
+      padding-left: 27px;
+      padding-bottom: 23px;
+      padding-top: 25px;
+      font-size: 17px;
+      line-height: 20.4px; }
+    .sf-news .input-group .input-group-btn .btn-default {
+      width: 66px;
+      height: 65px; }
 
 .input-group input {
   border-radius: 4px;
@@ -372,6 +373,8 @@ div {
     margin-bottom: 30px; }
   .sf-logos {
     text-align: center; }
+    .sf-logos img.no-margin-mobile {
+      margin-right: 0; }
     .sf-logos img.second-row {
       margin-top: 40px; }
   .sf-news p {
@@ -393,7 +396,7 @@ div {
   .sf-header {
     padding-top: 50px; }
     .sf-header .sf-menu {
-      margin-left: 141px;
+      margin-left: 141px !important;
       font-size: 13px; }
       .sf-header .sf-menu ul {
         padding-top: 16px; }
@@ -439,7 +442,7 @@ div {
     font-weight: 700;
     line-height: 12px; }
   .sf-logos .row {
-    width: 755px; }
+    width: 756px; }
   .sf-boxes .sf-box {
     width: 480px;
     margin-bottom: 21px; }
@@ -512,9 +515,13 @@ div {
       margin-left: 1px; }
   .sf-footer .l1 {
     margin: 0 36px; }
+    .sf-footer .l1 li {
+      margin-bottom: 24px; }
   .sf-footer .l2 {
     margin-left: 31px;
     margin-right: 61px; }
+    .sf-footer .l2 li {
+      margin-bottom: 17px; }
   .sf-footer .news {
     margin-left: 42px;
     width: 227px; }
