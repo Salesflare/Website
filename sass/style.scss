@@ -51,6 +51,10 @@
 
 }
 
+.feature-p{
+	margin-bottom: 32px;
+}
+
 .italic{
 	font-style: italic;
 }
@@ -61,6 +65,11 @@
 
 .bold{
 	font-weight: 700;
+}
+
+.feature-h3{
+	@extend .black;
+	margin-bottom: 23px;
 }
 
 html, body{
@@ -203,7 +212,7 @@ div{
 	padding: 62px 0;
 	border: 0;
 	border-bottom: 9px solid #3c87ae;
-
+	
 	h1{
 		font-size: 46px;
 		letter-spacing: -1px;
@@ -322,10 +331,18 @@ div{
 
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
+	.full, .full-xs{
+		width: 640px !important;
+	}
+
 	.no-mobile{
 		display: none !important;
 	}
-
+	
+	.sf-tour{
+		border-radius: 8px;
+	}
+	
 	.sf-footer{
 		.float:first-child{
 			width: 50%;
@@ -483,6 +500,15 @@ div{
 	//useful classes
 	.only-mobile{
 		display: none !important; 
+	}
+
+	.feature-p{
+		font-size: 20px;
+		line-height: 26px;
+	}
+
+	.full, .full-md{
+		width: 1200px !important;
 	}
 	//end of useful classes
 
