@@ -4,132 +4,7 @@
 .sf-header{
 	background: {
 		image: url('../img/hero-feature1-mobile.png');
-		size: cover;
 	};
-	
-	hr{
-		margin-bottom: 128px;
-	}
-
-	.sf-hero{
-		padding-bottom: 30px;
-
-		h1{
-			font: {
-				size: 46px;
-				weight: 700;
-			}
-			color: #ffffff;
-			text-align: center;
-			margin-bottom: 22px;
-		}
-
-		p{
-			font-size: 36px;
-			color:  rgba(255, 255, 255, 0.75);
-			
-			text-align: center;
-		}
-
-		.arrow{
-			&.right{
-				text-align: left;
-				padding-left: 10px;
-			}
-
-			&.left{
-				text-align: right;
-				padding-right: 10px;
-			}
-
-			margin-top: 22px;
-			margin-bottom: 30px
-		}
-	}
-
-}
-
-.sf-how-works{
-	background-color: #ffffff;
-
-	padding: {
-		top: 39px;
-		bottom: 35px;
-	}
-
-	.row{
-		width: 538px;
-		margin: {
-			left: 38px;
-			bottom: 35px;
-		}
-
-		&:last-child{
-			margin-bottom: 0;
-		}
-
-		p{
-			@extend .feature-p;
-			&:last-child{
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	h3{
-		@extend .feature-h3;
-	}
-
-	.box{
-		box-sizing: content-box;
-		border-width: 1px;
-		border-color:  #eaeaea;
-		border-style: solid;
-		background-color:  #f9f9f9;
-		box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.05);
-
-		width: 439px;
-
-		padding: {
-			right: 41px;
-			left: 58px;
-			top: 30px;
-			bottom: 29px;
-		}
-		margin-bottom: 24px;
-
-		p, div{
-			text-align: center;
-		}
-
-		p{
-			color: #3c3d41;
-			margin-bottom: 10px;
-		}
-
-		.actions.content, .row{
-			width: 100%;
-			margin: 0;
-		}
-
-		.actions.content{
-			.arrows{
-				margin-bottom: 16px;
-			}
-
-			.actions.row{
-				font:{
-					family: Montserrat;
-					size: 18px; 
-					weight: 700;
-				}
-				letter-spacing: 1.2px;
-				color:  #3cb6e3;
-			}
-		}
-
-	}
-
 }
 
 .sf-testimonial{
@@ -142,7 +17,17 @@
 
 	.wrapper{
 		height: 100%;
-		background-image: url('../img/phone-background.png');
+		//background-image: url('../img/phone-background.png');
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(170,176,175,0) 45%, rgba(67,79,77,0.9) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(45%,rgba(170,176,175,0)), color-stop(100%,rgba(67,79,77,0.9))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(170,176,175,0) 45%,rgba(67,79,77,0.9) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(170,176,175,0) 45%,rgba(67,79,77,0.9) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(170,176,175,0) 45%,rgba(67,79,77,0.9) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(170,176,175,0) 45%,rgba(67,79,77,0.9) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e6434f4d',GradientType=0 ); /* IE6-9 */
+
+
+
 	}
 	
 	height: 430px;
@@ -162,7 +47,13 @@
 }
 
 .sf-article{
+	.container{
+		background-color: #d2d2d2;
+	}
+
 	.quote{
+		background-color: #ffffff;
+		height: 430px;
 		padding: {
 			top: 39px;
 			bottom: 34px;
@@ -186,12 +77,20 @@
 	.image{
 		height: 430px;
 		background-image: url('../img/notification.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 }
 
 
 .sf-quote{
-	// TODO: waiting the new design and the sliced gradient
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(60,182,227,0.1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(60,182,227,0.1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a3cb6e3',GradientType=0 ); /* IE6-9 */
 	padding: 39px 0;
 	text-align: center;
 	
@@ -203,11 +102,27 @@
 	}
 }
 
-.sf-trackers{
+
+.trackers-wrapper{
 	background-color: #eaeaea;
+	position: relative;
+	z-index: 2;
+}
+
+.sf-trackers{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(3,3,3,0.1) 1%, rgba(84,84,84,0) 33%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(1%,rgba(3,3,3,0.1)), color-stop(33%,rgba(84,84,84,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
 
 	padding: 40px 0;
 	text-align: center;
+	position: relative;
+	z-index: 9999;
 
 	p{
 		letter-spacing: -0.48px;
@@ -217,10 +132,10 @@
 			family: Montserrat;
 		}
 		margin-bottom: 40px;
+	}
 
-		&:last-child{
-			margin-bottom: 0;
-		}
+	.col-md-4:last-child p{
+		margin-bottom: 0;
 	}
 
 	
@@ -251,9 +166,19 @@
 	background-color: #ffffff;
 	padding-bottom: 40px;
 	
+	.col-md-6:first-child{
+		height: 340px;
+
+		img{
+			position: absolute;
+			top: -47px;
+			z-index: 0;
+		}
+	}
 
 	.col-md-6:last-child{
 		padding-top: 29px;
+		background-color: #ffffff;
 	}
 
 	h3{
@@ -276,81 +201,18 @@
 		}
 	}
 
-	.sf-costumers{
-		.col-md-6:last-child{
-			padding-top: 0;
-		}
+	.sf-article{
+		.image{
+			background-position: center;
+		}	
 	}
+
 }
 
 @media (min-width: $md-screen) {
 	.sf-header{
 		background: {
 			image: url('../img/hero-feature1.png');
-		}
-
-		.sf-hero{
-			padding-bottom: 135px;
-
-			h1{
-				margin-bottom: 13px;
-			}
-			p{
-				font-size: 24px;
-			}
-
-			.arrow{
-				&.right{
-					text-align: right;
-				}
-
-				padding: {
-					
-					left: 0;
-					right: 0;
-				}
-				
-				margin-top: 22px;
-			}
-		}
-	}
-
-	.sf-how-works{
-		.row{
-			width: 500px;
-			margin:{
-				left: 240px;
-			}
-		}
-
-		.box{
-			width: 439px;
-
-			padding: {
-				right: 55px;
-				left: 56px;
-				top: 24px;
-				bottom: 24px;
-			}
-
-			margin-bottom: 29px;
-
-			p{
-				font-size: 16px;
-
-			}
-
-			.actions.content{
-				.arrows{
-					margin-bottom: 22px !important;
-				}
-
-				.actions.row{
-					font-size: 13px;
-					letter-spacing: 1.3px;
-				}
-			}
-
 		}
 	}
 
@@ -383,13 +245,31 @@
 		}
 	}
 
+	.trackers-wrapper{
+		z-index: 0;
+	}
+	
 	.sf-trackers{
-		position: relative;
 		z-index: 0;
 
 		.row{
 			width: 625px;
 			margin: 0 auto;
+		}
+
+		.circle-border{
+			width: 140px;
+			height: 140px;
+
+			img{
+				margin-top: 38px;
+				width: 60px;
+				height: 60px;
+			}
+		}
+
+		p{
+			font-size: 18px;
 		}
 	}
 
@@ -407,6 +287,7 @@
 		img{
 			position: absolute;
 			z-index: 1;
+			width: 100%;
 		}
 	}
 
