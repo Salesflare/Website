@@ -466,6 +466,10 @@ div{
 
 	}
 
+	form{
+		margin-top: 43px;
+	}
+
 }
 
 .sf-two-columns{
@@ -533,6 +537,33 @@ div{
 			margin-bottom: 0;
 		}
 	}
+	
+	input[type=checkbox]{
+		display: none;
+
+
+		& + label{
+			margin-bottom: 21px;
+			
+			.checkbox{
+				display: inline-block;
+				margin-right: 20px;
+				border-radius: 9px;
+				background-color:  #eeeeee;
+				width: 40px;
+				height: 40px;
+				border: 1px solid #b2d9b6;
+				vertical-align: middle;
+			}
+		}
+
+		&:checked + label .checkbox{
+			background-color:  #88d68f;
+			background-image: url('../img/check-mobile.png');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
 
 	.sf-button{
 		border: 0;
@@ -542,6 +573,10 @@ div{
 		border-radius: 65px;
 		margin-top: 40px;
 		display: block;
+	}
+
+	p{
+		font-size: 24px !important;
 	}
 }
 
@@ -813,6 +848,17 @@ div{
 			}
 
 		}
+
+		form{
+			text-align: left;
+			margin-top: 36px;
+
+			p{
+				font-size: 12px !important;
+				line-height: 14.4px !important; 
+				margin-bottom: 26px !important;
+			}
+		}
 	}
 
 
@@ -831,6 +877,21 @@ div{
 			letter-spacing: 2px;
 			margin-top: 32px;
 			padding: 19px 66px;
+		}
+
+		input[type=checkbox] + label{
+			.checkbox{
+				width: 18px;
+				height: 18px;
+				margin-right: 10px;
+				border-radius: 4px;
+			}
+		}
+
+		input[type=checkbox]:checked + label{
+			.checkbox{
+				background-image: url('../img/check.png');
+			}
 		}
 	}
 	

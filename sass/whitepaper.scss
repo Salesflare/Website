@@ -1,0 +1,24 @@
+@import 'assets/variables.scss';
+@import 'style.scss';
+
+.sf-header{
+	background: {
+		image: url('../img/hero-whitepaper-mobile.png');
+	}
+}
+
+@media (max-width: $xs-screen){
+}
+
+@media (min-width: $md-screen) {
+	.sf-header{
+		background: {
+			image: url('../img/hero-whitepaper.png');
+		}
+	}
+	
+	.sf-one-column{
+		text-align: center;
+	}
+}
+
