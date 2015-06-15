@@ -76,6 +76,9 @@
 	margin-bottom: 23px;
 }
 
+.underline{
+	text-decoration: underline;
+}
 html, body{
 	-webkit-font-smoothing: antialiased !important;
 	color: #838d8f;
@@ -97,7 +100,7 @@ h1,h2,h3,h4,h5,h6{
 
 @include heading(1, 44, 59.8) {};
 @include heading(2, 36, 26.4) {};
-@include heading(3, 22, 26.4) {};
+@include heading(3, 21.1, 26.4) {};
 @include heading(4, 18, 13.2) {};
 @include heading(5, 11, 13.2) {};
 @include heading(6, 46, 59.8) {};
@@ -465,6 +468,83 @@ div{
 
 }
 
+.sf-two-columns{
+	.container{
+		@extend .wide;
+	}
+
+	.row{
+		clear: both;
+	}
+
+	.col-md-6{
+		.content{
+			margin: 0 auto;
+		}
+
+		h3{
+			@extend .feature-h3;
+		}
+
+		p{
+			@extend .feature-p;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.sf-form{
+	fieldset{
+		padding: {
+			top: 36px;
+			right: 34px;
+			left: 34px;
+			bottom: 40px;
+		}
+
+		border-radius: 10px;
+		border-width: 1px;
+		border-color:  rgba(68, 69, 73, 0.2);
+		border-style: solid;
+	}
+
+	label, input{
+		display: block;
+	}
+
+	label{
+		font-family: Montserrat;
+		color:  #3a3d3f;
+		font-size: 22px;
+		margin-bottom: 24px;
+	}
+
+	input{
+		border-radius: 5px;
+		width: 100%;
+		background-color:  #eeeeee;
+		border: 0;
+		border-top: 1px solid #dddddd;
+		padding: 7px;
+		height: 60px;
+		margin-bottom: 30px;
+
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	.sf-button{
+		border: 0;
+		margin: 0 auto;
+		padding: 27px 94px;
+		letter-spacing: 4.4px;
+		border-radius: 65px;
+		margin-top: 40px;
+		display: block;
+	}
+}
+
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
 	body{
@@ -735,14 +815,40 @@ div{
 		}
 	}
 
+
+	.sf-form{
+		label{
+			font-size: 12px;
+			margin-bottom: 16px;
+		}
+
+		input{
+			height: 45px;
+			margin-bottom: 19px
+		}
+
+		.sf-button{
+			letter-spacing: 2px;
+			margin-top: 32px;
+			padding: 19px 66px;
+		}
+	}
+	
+
 	//useful classes
 	.only-mobile{
 		display: none !important; 
 	}
 
 	.feature-p{
-		font-size: 20px;
+		font-size: 19.8px;
 		line-height: 26px;
+		margin: {
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 1px;
+		}
 	}
 
 	.full, .full-md{
