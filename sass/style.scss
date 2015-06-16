@@ -328,7 +328,10 @@ div{
 	background-color:  rgba(59, 60, 64, 0.95);
 	padding: 41px 0 ;
 	color: #f7f7f7;
-
+	a{
+		@extend .styless-anchor;
+		color: rgba(238, 238, 238, 0.56);
+	}
 	.float{
 		float: left;
 	}
