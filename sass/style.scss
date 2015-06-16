@@ -79,6 +79,7 @@
 .underline{
 	text-decoration: underline;
 }
+
 html, body{
 	-webkit-font-smoothing: antialiased !important;
 	color: #838d8f;
@@ -108,6 +109,10 @@ h1,h2,h3,h4,h5,h6{
 
 div{
 	overflow: visible;
+}
+
+.sf-menu-mobile{
+	display: none;
 }
 
 .sf-page-content{
@@ -183,14 +188,11 @@ div{
 		}
 
 		.sf-nav-button{
-			margin: {
-				left: 201px;
-				top: 11px;
-			};
-
+			float: right;
 			a{
 				@extend .styless-anchor;
 
+				display: block;
 				font-size: 13px;
 				border: 2px {
 					style: solid;
@@ -200,8 +202,10 @@ div{
 				-webkit-border-radius: 30px;
 				-moz-border-radius: 30px;
 				border-radius: 30px;
-				padding: 13px 44px 13px 43px;
+				padding: 13px 0;
 				letter-spacing: 0.26px;
+
+				text-align: center;
 			}
 		}
 	}
@@ -269,7 +273,9 @@ div{
 	padding: 62px 0;
 	border: 0;
 	border-bottom: 9px solid #3c87ae;
-	
+	a{
+		@extend .styless-anchor;
+	}
 	h1{
 		font-size: 46px;
 		letter-spacing: -1px;
@@ -537,6 +543,12 @@ div{
 			margin-bottom: 0;
 		}
 	}
+
+	textarea{
+		@extend input;
+		height: 80px;
+		resize: vertical;
+	}
 	
 	input[type=checkbox]{
 		display: none;
@@ -584,6 +596,59 @@ div{
 @media (max-width: $xs-screen) { 
 	body{
 		overflow-x: hidden;
+	}
+	
+	.open-menu{
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	.sf-menu-mobile{
+		padding: {
+			top: 40px;
+			bottom: 60px;
+		}
+
+		z-index: 999999;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		background-color: rgba(59, 60, 64, 0.95);
+
+		.title{
+			font-family: 'Montserrat';
+			color: rgba(247, 247, 247, 0.35);
+			font-size: 18px;
+			float: left;
+			margin-bottom: 39px;
+		}
+
+		.close-menu{
+			float: right;
+			font-family: 'Montserrat';
+			color: #eeeeee;
+			font-size: 20px;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		ul{
+			padding: 0;
+			list-style: none;
+			li{
+				margin-bottom: 50px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+				
+				a{
+					text-decoration: none;
+					font-family: 'Montserrat';
+					color:  rgba(238, 238, 238, 0.7);
+					font-size: 24px;
+				}
+			}
+		}
 	}
 
 	.full, .full-xs{
@@ -871,6 +936,10 @@ div{
 		input{
 			height: 45px;
 			margin-bottom: 19px
+		}
+
+		textarea{
+			height: 65px;
 		}
 
 		.sf-button{
