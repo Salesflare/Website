@@ -51,6 +51,9 @@
 	text-decoration: none;
 }	
 
+.gradient{
+	filter: none;
+}
 
 .sf-button{
 	@extend .uppercase;
@@ -69,6 +72,7 @@
 
 .feature-p{
 	margin-bottom: 32px;
+	font-size: 24px;
 }
 
 .italic{
@@ -85,11 +89,15 @@
 
 .feature-h3{
 	@extend .black;
-	margin-bottom: 23px;
+	margin-bottom: 16px;
 }
 
 .underline{
 	text-decoration: underline;
+}
+
+body{
+	overflow-x: hidden;
 }
 
 html, body{
@@ -264,10 +272,9 @@ div{
 		padding-bottom: 30px;
 
 		h1{
-			font: {
-				size: 46px;
-				weight: 700;
-			}
+			font-size: 46.99px;
+				
+			
 			color: #ffffff;
 			text-align: center;
 			margin-bottom: 22px;
@@ -434,9 +441,7 @@ div{
 	}
 
 	.row{
-		width: 538px;
 		margin: {
-			left: 38px;
 			bottom: 35px;
 		}
 
@@ -446,6 +451,7 @@ div{
 
 		p{
 			@extend .feature-p;
+			width: 522px;
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -479,8 +485,11 @@ div{
 		}
 
 		p{
+			width: 100% !important;
 			color: #3c3d41;
 			margin-bottom: 10px;
+			font-size: 22px;
+			line-height: 20px;
 		}
 
 		.actions.content, .row{
@@ -501,6 +510,18 @@ div{
 				}
 				letter-spacing: 1.2px;
 				color:  #3cb6e3;
+
+				.col-xs-4{
+					text-align: center;
+
+					&:first-child{
+						text-align: left;
+					}
+
+					&:last-child{
+						text-align: right;
+					}
+				}
 			}
 		}
 
@@ -515,16 +536,16 @@ div{
 .sf-two-columns{
 	.container{
 		@extend .wide;
-	}
-
-	.row{
-		clear: both;
-	}
-
-	.col-md-6{
-		.content{
-			margin: 0 auto;
+		.row{
+			clear: both;
 		}
+	}
+
+	.first, .second{
+		.content{
+			width: 560px;
+			margin: 0 auto;
+		} 
 
 		h3{
 			@extend .feature-h3;
@@ -532,9 +553,19 @@ div{
 
 		p{
 			@extend .feature-p;
-			margin-bottom: 0;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+		&.full-col{
+			.content{
+				width: 100%;
+			}
 		}
 	}
+
 }
 
 .sf-form{
@@ -801,10 +832,10 @@ div{
 			padding-bottom: 135px;
 
 			h1{
-				margin-bottom: 13px;
+				margin-bottom: 15px;
 			}
 			p{
-				font-size: 24px;
+				font-size: 23.8px;
 			}
 
 			.arrow{
@@ -828,6 +859,7 @@ div{
 	}
 
 	.sf-footer{
+		padding-bottom: 93px;
 		.logo{
 			background: {
 				image: url('../img/logo-footer.png');
@@ -931,13 +963,21 @@ div{
 			margin:{
 				left: 240px;
 			}
+
+			p{
+				margin-bottom: 26px !important;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
 		}
 
 		.box{
-			width: 439px;
+			width: 500px;
 
 			padding: {
-				right: 55px;
+				right: 54px;
 				left: 56px;
 				top: 24px;
 				bottom: 24px;
@@ -946,8 +986,9 @@ div{
 			margin-bottom: 29px;
 
 			p{
-				font-size: 16px;
-
+				font-size: 16px !important;
+				line-height: 20px !important;
+				margin-bottom: 22px !important;
 			}
 
 			.actions.content{
@@ -956,11 +997,14 @@ div{
 				}
 
 				.actions.row{
+					width: 390px;
 					font-size: 13px;
 					letter-spacing: 1.3px;
+
 				}
 			}
 
+			box-sizing: border-box;
 		}
 
 		form{
@@ -973,8 +1017,36 @@ div{
 				margin-bottom: 26px !important;
 			}
 		}
+
 	}
 
+	.sf-two-columns{
+		.first, .second{
+			.content{
+				max-width: 100%;
+				width: 560px;
+			}
+		}
+
+		.first.full-col, .second.full-col{
+			.content{
+				width: 100%;
+				float: none;
+			}
+		}
+
+		.first{
+			.content{
+				float: right;
+			}
+		}
+
+		.second{
+			.content{
+				float: left;
+			}
+		}
+	}
 
 	.sf-form{
 		label{
@@ -1020,13 +1092,17 @@ div{
 	}
 
 	.feature-p{
-		font-size: 19.8px;
+		font-size: 19.9px;
 		line-height: 26px;
 		margin: {
 			top: 0;
-			bottom: 0;
+			bottom: 23px;
 			right: 0;
 			left: 1px;
+		}
+
+		&:last-child{
+			margin-bottom: 0;
 		}
 	}
 

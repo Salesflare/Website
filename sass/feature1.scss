@@ -16,6 +16,7 @@
 	}
 
 	.wrapper{
+		@extend .gradient;
 		height: 100%;
 		//background-image: url('../img/phone-background.png');
 		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(170,176,175,0) 45%, rgba(67,79,77,0.9) 100%); /* FF3.6+ */
@@ -32,14 +33,10 @@
 	
 	height: 430px;
 
-	.row{
-		width: 552px;
-		margin: 0 auto;
-	}
-
 	p{
+		width: 552px;
 		color:  rgba(255, 255, 255, 0.95);
-		font-size: 28px;
+		font-size: 27px;
 		text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
 		text-align: center;
 		margin-top: 298px;
@@ -51,15 +48,10 @@
 		background-color: #ffffff;
 
 		.content{
-			width: 470px;
 			padding: {
 				top: 39px;
 				bottom: 37px;	
 			};
-
-			p{
-				width: 431px;
-			}
 		}
 	}
 
@@ -68,7 +60,7 @@
 
 		.content{
 			max-width: 100%;
-			height: 359px;
+			height: 408px;
 			background-image: url('../img/macbook.png');
 			background-position: 81% 10%;
 		}
@@ -77,6 +69,7 @@
 
 
 .sf-quote{
+	@extend .gradient;
 	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(60,182,227,0.1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(60,182,227,0.1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* Chrome10+,Safari5.1+ */
@@ -84,6 +77,8 @@
 	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(60,182,227,0.1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#1a3cb6e3',GradientType=0 ); /* IE6-9 */
+
+	background-color: #2e2e30;
 	padding: 39px 0;
 	text-align: center;
 	
@@ -95,24 +90,21 @@
 	}
 }
 
-
-.trackers-wrapper{
-	background-color: #eaeaea;
-	position: relative;
-	z-index: 2;
-}
-
 .sf-trackers{
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.1) 0%, rgba(3,3,3,0.1) 1%, rgba(84,84,84,0) 33%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.1)), color-stop(1%,rgba(3,3,3,0.1)), color-stop(33%,rgba(84,84,84,0)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.1) 0%,rgba(3,3,3,0.1) 1%,rgba(84,84,84,0) 33%,rgba(255,255,255,0) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a000000', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+	@extend .gradient;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAyMDIwMiIgc3RvcC1vcGFjaXR5PSIwLjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(2,2,2,0.1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(2,2,2,0.1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(2,2,2,0.1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(2,2,2,0.1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(2,2,2,0.1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(2,2,2,0.1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a020202', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
 
+	background-color: #ececec;
 
-	padding: 40px 0;
+	padding: 39px 0;
 	text-align: center;
 	position: relative;
 	z-index: 9999;
@@ -124,6 +116,7 @@
 			size: 24px;
 			family: Montserrat;
 		}
+
 		margin-bottom: 40px;
 	}
 
@@ -157,15 +150,15 @@
 
 .sf-costumers{
 	background-color: #ffffff;
-	padding-bottom: 40px;
 	
 	.col-md-6:first-child{
 		height: 340px;
 
 		img{
+			top: -83px;
 			position: absolute;
-			top: -47px;
 			z-index: 0;
+			right: 27px;
 		}
 	}
 
@@ -200,6 +193,9 @@
 		}	
 	}
 
+	.sf-costumers{
+		padding-bottom: 40px;
+	}
 }
 
 @media (min-width: $md-screen) {
@@ -211,18 +207,38 @@
 
 	.sf-testimonial{
 		background-image: url('../img/phone1.png');
-		
-		.row{
-			width: 748px;
-		}
 
 		p{
-			margin-top: 327px;
-			font-size: 24px;
-			line-height: 38px;
+			width: 748px;
+			margin: {
+				top: 317px;
+				left: auto;
+				right: auto;
+			}
+			
+			font-size: 23.46px;
+			line-height: 32px;
+			
 		}
 
 
+	}
+
+	.sf-article{
+		.first{
+			h3{
+				width: 385px;
+			}
+
+			.content{
+				padding: {
+					top: 69px;
+					bottom: 66px;
+					right: 75px;
+				}
+				
+			}
+		}
 	}
 
 	.sf-quote{
@@ -237,19 +253,12 @@
 			width: 494px;
 		}
 	}
-
-	.trackers-wrapper{
-		z-index: 0;
-	}
 	
 	.sf-trackers{
-		z-index: 0;
-
 		.row{
-			width: 625px;
 			margin: 0 auto;
+			width: 725px;
 		}
-
 		.circle-border{
 			width: 140px;
 			height: 140px;
@@ -263,25 +272,28 @@
 
 		p{
 			font-size: 18px;
+			margin: 0;
 		}
 	}
 
 	.sf-costumers{
 		position: relative;
 
+		.second{
+			.content{
+				padding-top: 79px;
+				padding-left: 40px;
+			}
+		}
+		
 		.col-md-6{
 			padding: 0;
 		}
 
-		h3{
-			margin-top: 99px;
-		}
-
 		img{
-			position: absolute;
-			z-index: 1;
-			width: 100%;
+			right: 0px;
 		}
+		
 	}
 
 	.sf-tour{
