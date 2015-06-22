@@ -110,7 +110,7 @@
 		color: #b0bfc2;
 	}
 
-	.col-md-3{
+	.col-md-4{
 		span{
 			color:  #3cb6e3;
 			font-size: 14px; /* Aproximação devido à substituição de fonte */
@@ -184,13 +184,26 @@
 
 .sf-address-book{
 	background-color: #ffffff;
+
 	.first{
 		.content{
+			padding:{
+				top: 131px;
+				bottom: 135px;
+				left:239px;
+			}
+
 			background: {
 				image: url('../img/background-photos.png');
 				repeat: no-repeat;
-				position-y: 24px;
+				position-y: 30px;
 			}
+		}
+	}
+
+	.second{
+		.content{
+			padding-bottom: 39px;
 		}
 	}
 }
@@ -208,11 +221,11 @@
 			margin: 0;
 		}
 
-		.col-md-9{
+		.col-md-8{
 			margin-bottom: 19px;
 		}
 
-		span, .col-md-3 span{
+		span, .col-md-4 span{
 			font-size: 17px;
 		}
 	}
@@ -245,7 +258,7 @@
 	.sf-whitepaper{
 		padding-bottom: 37px;
 		
-		.col-md-3{
+		.col-md-4{
 			margin-top: 8px;
 		}
 
@@ -314,10 +327,11 @@
 			.content{
 				padding:{
 					top: 125px;
-					right: 340px;
+					right: 260px;
 					bottom: 125px;
 				}
 				
+				background-position-y: 24px;
 
 				text-align: right;
 			}
@@ -326,7 +340,9 @@
 		.second{
 			.content{
 				padding:{
-
+					top: 88px;
+					bottom: 84px;
+					left: 40px;
 				}
 			}
 		}
