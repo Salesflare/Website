@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
 
 @include heading(1, 46.9, 46, -1.4) {};
 @include heading(2, 36, 26.4, 0) {};
-@include heading(3, 22.4, 26.4, -0.89) {};
+@include heading(3, 22.78, 26.4, -0.89) {};
 @include heading(4, 18, 13.2, 0) {};
 @include heading(5, 11, 13.2, 0) {};
 @include heading(6, 46, 59.8, 0) {};
@@ -968,7 +968,7 @@ div{
 				margin-bottom: 26px !important;
 
 				&:last-child{
-					margin-bottom: 0;
+					margin-bottom: 0 !important;
 				}
 			}
 		}
@@ -1024,7 +1024,7 @@ div{
 		.first, .second{
 			.content{
 				max-width: 100%;
-				width: 560px;
+				width: 600px;
 			}
 		}
 
@@ -1113,6 +1113,10 @@ div{
 
 	.wrapper-right{
 		margin-left: 50%;
+	}
+
+	.gradient{
+		filter: none;
 	}
 	//end of useful classes
 

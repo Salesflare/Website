@@ -141,6 +141,8 @@
 			padding: {
 				top: 39px;
 				bottom: 45px;
+				left: 79px;
+				right: 105px;
 			}
 		}
 	}
@@ -190,13 +192,14 @@
 			padding:{
 				top: 131px;
 				bottom: 135px;
-				left:239px;
+				left:261px;
 			}
 
 			background: {
 				image: url('../img/background-photos.png');
 				repeat: no-repeat;
 				position-y: 30px;
+				position-x: 22px;
 			}
 		}
 	}
