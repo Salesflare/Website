@@ -7,16 +7,13 @@ var imageminOptipng = require('imagemin-optipng');
 var imageminGifsicle = require('imagemin-gifsicle');
 
 gulp.task('styles', function() {
-	gulp.src('sass/*.scss')
-		.pipe(sass({
-			errLogToConsole: true
-		}))
-		.pipe(minifyCss())
-		.pipe(gulp.dest('dist/css'))
+	return gulp.src('sass/*.scss')
+		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('scripts', function(){
-	gulp.src('js/*.js')
+	return gulp.src('js/*.js')
 	.pipe(uglify())
 	.pipe(gulp.dest('dist/js'));
 });
