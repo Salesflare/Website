@@ -3,7 +3,7 @@
 
 .sf-header{
 	background: {
-		image: url('../img/singup-hero-mobile.png');
+		image: url('../img/singup-hero-mobile.jpg');
 	}
 }
 
@@ -13,12 +13,16 @@
 @media (min-width: $md-screen) {
 	.sf-header{
 		background: {
-			image: url('../img/singup-hero.png');
+			image: url('../img/singup-hero.jpg');
 		}
 	}
 	
 	.sf-one-column{
 		text-align: center;
+
+		p{
+			max-width: 100%;
+		}
 	}
 }
 

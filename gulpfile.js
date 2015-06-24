@@ -4,6 +4,7 @@ var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var imageminOptipng = require('imagemin-optipng');
+var imageminGifsicle = require('imagemin-gifsicle');
 
 gulp.task('styles', function() {
 	gulp.src('sass/*.scss')
@@ -25,17 +26,24 @@ gulp.task('html', function() {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('root', ['html'] ,function() {
-    return gulp.src(['*', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist'])
+gulp.task('fav', function() {
+	return gulp.src('fav/**.*')
+		.pipe(gulp.dest('dist'));
+});
+
+gulp.task('root', ['html', 'fav'] ,function() {
+    return gulp.src(['*', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav'])
     	.pipe(gulp.dest('dist'));
 });
 
 gulp.task('img', function(){
-	return gulp.src('img/*.{png,svg,jpg,jpeg}')
+	return gulp.src('img/*.{gif,png,svg,jpg,jpeg}')
 		.pipe(imagemin({
 		    progressive: true,
+
 		    use: [imageminOptipng({optimizationLevel: 5})]
 		}))
+		.pipe(imageminGifsicle({interlaced: true})())
 		.pipe(gulp.dest('dist/img'));
 });
 
@@ -54,4 +62,5 @@ gulp.task('watch', function(){
 	gulp.watch('*.html', ['html']);
 	gulp.watch('sass/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['scripts']);
+	gulp.watch('img/**.*', ['img']);
 })
