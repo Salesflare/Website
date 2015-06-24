@@ -592,6 +592,7 @@ div{
 		color:  #3a3d3f;
 		font-size: 22px;
 		margin-bottom: 24px;
+		font-weight: 400;
 	}
 
 	input{
@@ -645,7 +646,7 @@ div{
 	.sf-button{
 		border: 0;
 		margin: 0 auto;
-		padding: 27px 94px;
+		padding: 19px 94px;
 		letter-spacing: 4.4px;
 		border-radius: 65px;
 		margin-top: 40px;
@@ -654,6 +655,10 @@ div{
 
 	p{
 		font-size: 24px !important;
+	}
+
+	textarea{
+		height: 140px;
 	}
 }
 
@@ -1060,13 +1065,14 @@ div{
 		}
 
 		textarea{
-			height: 65px;
+			height: 140px;
 		}
 
 		.sf-button{
 			letter-spacing: 2px;
 			margin-top: 32px;
-			padding: 19px 66px;
+			padding: 13px 66px;
+			font-size: 10px;
 		}
 
 		input[type=checkbox] + label{
@@ -1117,6 +1123,9 @@ div{
 
 	.gradient{
 		filter: none;
+	}
+	.center{
+		text-align: center;
 	}
 	//end of useful classes
 

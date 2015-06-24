@@ -91,8 +91,13 @@ a.sf-button{
 		right:26px;
 		bottom:18px;
 	}
+	font-size: 10px;
+	line-height: 7px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	border-radius: 100px;
 	display: inline-block;
-	border-radius: 50px;
+	margin-bottom: 18px;
 }
 
 .item{
@@ -132,7 +137,7 @@ a.sf-button{
 
 	.list{
 		margin: 0 auto;
-		margin-bottom: 19px !important;
+		margin-bottom: 19px;
 		text-align: left;
 	}
 
@@ -154,6 +159,13 @@ a.sf-button{
 		}
 		margin-bottom: 30px;
 	}
+
+	.sf-button{
+		padding: {
+			right: 26px;
+			left: 23px;
+		}
+	}
 }
 
 @media (max-width: $xs-screen){
@@ -166,10 +178,15 @@ a.sf-button{
 		}
 	}
 
+	.sf-pricing .sf-box{
+		height: 289px;
+	}
+
 	.sf-boxes{
 
 		.sf-box{
 			width: 480px;
+			
 			margin-bottom: 40px;
 
 			.header{
@@ -208,7 +225,7 @@ a.sf-button{
 				}
 
 				p{
-					font-size: 13px;
+					font-size: 15.9px;
 					line-height: 18.2px;
 
 				}
@@ -243,6 +260,7 @@ a.sf-button{
 		
 		.list{
 			width: 193px;
+			margin-bottom: 39px;
 		}
 		
 		.contact{
