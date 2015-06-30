@@ -33,7 +33,6 @@
 		@content
 	}	
 }
-
 .wide{
 	width: 100% !important;
 }
@@ -49,6 +48,14 @@
 
 .gradient{
 	filter: none;
+}
+
+.open{
+	display: block;
+}
+
+.close{
+	display: none;
 }
 
 .sf-button{

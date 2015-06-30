@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Salesflare/Website",
   "devDependencies": {
+    "angular": "^1.4.1",
     "gulp": "^3.9.0",
     "gulp-imagemin": "^2.3.0",
     "gulp-minify-css": "^1.1.6",
