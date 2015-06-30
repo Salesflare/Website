@@ -418,6 +418,7 @@ div {
         bottom: 35px;
     }
     .row {
+        width: 100%;
         margin: {
             bottom: 35px;
         }
@@ -426,7 +427,7 @@ div {
         }
         p {
             @extend .feature-p;
-            width: 522px;
+            
             &:last-child {
                 margin-bottom: 0;
             }
@@ -449,7 +450,11 @@ div {
             top: 30px;
             bottom: 29px;
         }
-        margin-bottom: 24px;
+        margin: {
+            bottom: 24px;
+            left: auto;
+            right: auto;
+        }
         p,
         div {
             text-align: center;
@@ -890,6 +895,7 @@ div {
                 left: 240px;
             }
             p {
+                width: 522px;
                 margin-bottom: 26px !important;
                 &:last-child {
                     margin-bottom: 0 !important;
