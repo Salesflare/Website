@@ -41,12 +41,16 @@
     }
     height: 430px;
     p {
-        width: 552px;
+        width: 80%;
         color: rgba(255, 255, 255, 0.95);
         font-size: 27px;
         text-shadow: 3px 5px 6px rgba(0, 0, 0, 0.25);
         text-align: center;
-        margin-top: 298px;
+        margin: {
+            top: 298px;
+            left: auto;
+            right: auto;
+        }
     }
 }
 
@@ -174,12 +178,14 @@
 .sf-costumers {
     background-color: #ffffff;
     .col-md-6:first-child {
-        height: 340px;
+        .content {
+            height: 340px;
+        }
         img {
             top: -83px;
             position: absolute;
             z-index: 0;
-            right: 27px;
+            right: 201px;
         }
     }
     .col-md-6:last-child {

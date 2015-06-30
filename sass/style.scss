@@ -510,8 +510,11 @@ div {
     .first,
     .second {
         .content {
-            width: 560px;
-            margin: 0 auto;
+            width: 90%;
+            margin: {
+                left: auto;
+                right: auto;
+            }
         }
         h3 {
             @extend .feature-h3;
