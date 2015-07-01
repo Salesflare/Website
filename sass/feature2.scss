@@ -141,8 +141,6 @@
 			padding: {
 				top: 39px;
 				bottom: 45px;
-				left: 79px;
-				right: 105px;
 			}
 		}
 	}
@@ -309,6 +307,12 @@
 	}
 
 	.sf-quote{
+		.first{
+			padding: {
+				left: 79px;
+				right: 105px;
+			}
+		}
 		p{
 			width: 670px;
 		}
