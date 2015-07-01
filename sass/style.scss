@@ -300,12 +300,15 @@ div{
 	}
 }
 .sf-tour{
-	background-color:  #3cb6e3;
+	background-color: #3cb6e3;
 	color: #ffffff;
 	text-align: center;
 	padding: 62px 0;
 	border: 0;
 	border-bottom: 9px solid #3c87ae;
+    &:hover{
+        background-color: #3b97c7;
+    }
 	a{
 		@extend .styless-anchor;
 	}
