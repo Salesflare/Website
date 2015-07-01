@@ -7,7 +7,7 @@
         background-color: #3cb6e3;
         color: #FFFFFF;
         h1 {
-            font-size: 46.9px;
+            font-size: 45px;
             letter-spacing: -1.4px;
         }
         p {
@@ -74,7 +74,7 @@
 
 .sf-logos {
     @extend .gradient;
-    padding: 12px 0;
+    padding: 40px 0;
     background: rgb(245, 245, 245);
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -115,6 +115,13 @@
 .sf-boxes {
     background-color: #eaeaea;
     padding: 40px 0;
+    .row:last-child{
+        .col-md-6:last-child{
+            .sf-box{
+                margin-bottom: 0;
+            }
+        }
+    }
     a {
         text-decoration: none;
     }
@@ -354,15 +361,20 @@
         }
     }
     .sf-logos {
+        padding: 12px 0;
         .row {
             width: 756px;
         }
     }
     .sf-boxes {
+        .row:last-child{
+            .sf-box{
+                margin-bottom: 0;
+            }
+        }
         .sf-box {
-            width: 480px;
+            width: 470px;
             height: 300px;
-            margin-bottom: 21px;
             position: relative;
             .box-content {
                 padding: {
@@ -462,6 +474,7 @@
                 p {
                     font-size: 12px;
                     text-align: left;
+                    line-height: 16px;
                     &:first-child {
                         letter-spacing: 2.4px;
                     }

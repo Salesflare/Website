@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
 @import "assets/variables";
 @font-face {
     font-family: 'Montserrat';
@@ -82,7 +82,7 @@ $ls) {
 
 .feature-h3 {
     @extend .black;
-    margin-bottom: 16px;
+    margin-bottom: 38px;
 }
 
 .underline {
@@ -276,7 +276,7 @@ div {
     .sf-hero {
         padding-bottom: 30px;
         h1 {
-            font-size: 46.99px;
+            font-size: 60.99px;
             color: #ffffff;
             text-align: center;
             margin-bottom: 22px;
@@ -420,7 +420,7 @@ div {
     .row {
         width: 100%;
         margin: {
-            bottom: 35px;
+            bottom: 70px;
         }
         &:last-child {
             margin-bottom: 0;
@@ -741,6 +741,9 @@ div {
 
 // TABLETS AND DESKTOPS
 @media (min-width: $md-screen) {
+    .feature-h3{
+        margin-bottom: 16px;
+    }
     body {
         font: {
             size: 14px;
@@ -893,6 +896,7 @@ div {
             width: 500px;
             margin: {
                 left: 240px;
+                bottom: 63px;
             }
             p {
                 width: 522px;
