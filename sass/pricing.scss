@@ -169,6 +169,19 @@ a.sf-button{
 }
 
 @media (max-width: $xs-screen){
+	.sf-boxes{
+		.sf-box{
+			.header{
+				p{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.sf-button{
+		font-size:22px !important;
+	}
 }
 
 @media (min-width: $md-screen) {
@@ -185,7 +198,7 @@ a.sf-button{
 	.sf-boxes{
 
 		.sf-box{
-			width: 480px;
+			width: 470px;
 			
 			margin-bottom: 40px;
 
@@ -225,8 +238,8 @@ a.sf-button{
 				}
 
 				p{
-					font-size: 15.9px;
-					line-height: 18.2px;
+					font-size: 15px;
+  					line-height: 25px;
 
 				}
 			}
@@ -286,6 +299,12 @@ a.sf-button{
 				.no-mobile.italic{
 					margin: 0 50px;
 				}
+		}
+	}
+
+	.sf-faq{
+		.sf-box{
+			margin-bottom: 20px;
 		}
 	}
 }

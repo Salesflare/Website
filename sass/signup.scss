@@ -8,6 +8,11 @@
 }
 
 @media (max-width: $xs-screen){
+	.subtitle{
+        p{
+            font-size: 22px !important;
+        }
+    }
 }
 
 @media (min-width: $md-screen) {

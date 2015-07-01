@@ -167,13 +167,13 @@
 
 	p:first-child{
 		color:  #ffffff;
-		font-size: 23.5px;
+		font-size: 14px;
 		margin-bottom: 24px;
 	}
 
 	p:last-child{
 		color: rgba(213, 213, 213, 0.75);
-		font-size: 20px;
+		font-size: 12px;
 		span{
 			font-family: Montserrat;
 			color: rgba(213, 213, 213, 0.75);
@@ -219,6 +219,7 @@
 
 	.sf-whitepaper{
 		h3{
+			font-size: 15px;
 			margin: 0;
 		}
 
@@ -227,7 +228,7 @@
 		}
 
 		span, .col-md-4 span{
-			font-size: 17px;
+			font-size: 15px;
 		}
 	}
 }

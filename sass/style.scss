@@ -664,6 +664,9 @@ div{
 
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
+	.sf-header.larger.feature .sf-hero p{
+		margin-bottom: 261px;
+	}
 	body{
 		overflow-x: hidden;
 	}

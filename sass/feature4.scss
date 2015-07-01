@@ -210,6 +210,10 @@
 
 @media (max-width: $xs-screen){
 	.sf-quote{
+		p{
+			font-size: 13px;
+  			text-align: center;
+		}
 		.author{
 			margin-top: 23px;
 
@@ -224,12 +228,12 @@
 			.profile{
 				margin-right: 0;
 				vertical-align: middle;
-				width: 186px;
+				
 				p{
 					font-size: 18px; /* Aproximação devido à substituição de fonte */
-					
+					text-align: left;
 					line-height: 14px;
-					.name{
+					&.name{
 						color: #fefefe;
 						font-weight: 700;
 						text-transform: uppercase;
@@ -237,7 +241,7 @@
 						letter-spacing: 2.4px;	
 					}
 
-					.company{
+					&.company{
 						color:  rgba(255, 255, 255, 0.75);
 						margin-top: 10px;
 					}
@@ -246,9 +250,10 @@
 		
 		}
 	}
-	
+
 	.sf-whitepaper{
 		h3{
+			font-size: 15px;
 			margin: 0;
 		}
 
@@ -257,7 +262,7 @@
 		}
 
 		span, .col-md-4 span{
-			font-size: 17px;
+			font-size: 15px;
 		}
 	}
 
