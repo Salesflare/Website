@@ -57,7 +57,7 @@
 	
 	.sf-hf-button{
 		display: inline-block;
-		margin-right: 22px;
+		margin-right: 4px;
 		border-radius: 7px;
 		font-size: 18px;
 		padding: {
@@ -88,7 +88,7 @@
 
 .sf-logos {
 	@extend .gradient;
-	padding: 12px 0;
+	padding: 40px 0;
 
 	background: rgb(245,245,245); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -118,7 +118,13 @@
 .sf-boxes{
 	background-color: #eaeaea;
 	padding: 40px 0;
-
+    .row:last-child{
+        .col-md-6:last-child{
+            .sf-box{
+                margin-bottom: 0;
+            }
+        }
+    }
     a{
         text-decoration: none;
     }
@@ -315,7 +321,23 @@
 			font-size: 24px;
 			margin-bottom: 41px;
 		}
+
+        .input-group{
+            input{
+                font-size: 25px;
+            }
+        }
 	}
+
+    .sf-header-foot{
+        span.whitepaper{
+            font-size: 16px;
+        }
+
+        span{
+            font-size: 15px;
+        }
+    }
 }
 
 @media (min-width: $md-screen) { 
@@ -402,12 +424,18 @@
 
 
 	.sf-logos {
+        padding: 12px 0;
 		.row{
 			width: 756px;
 		}
 	}
 
 	.sf-boxes{
+        .row:last-child{
+            .sf-box{
+                margin-bottom: 0;
+            }
+        }
 		.sf-box{
 			width: 470px;
 			height: 300px;
@@ -511,7 +539,7 @@
 				p{
 					font-size: 12px;
 					text-align: left;
-
+                    line-height: 15px;
 					&:first-child{
 						letter-spacing: 2.4px;
 					}

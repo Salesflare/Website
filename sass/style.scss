@@ -68,7 +68,7 @@
 
 .feature-p{
 	margin-bottom: 32px;
-	font-size: 24px;
+	font-size: 15px;
 }
 
 .italic{
@@ -339,6 +339,7 @@ div{
 
 
 
+
 .input-group{
 	input{
 		border-radius: 4px;
@@ -450,7 +451,7 @@ div{
 
 		p{
 			@extend .feature-p;
-			width: 522px;
+			
 			&:last-child{
 				margin-bottom: 0;
 			}
@@ -666,7 +667,9 @@ div{
 	body{
 		overflow-x: hidden;
 	}
-	
+	.feature-h3{
+		font-size: 18px;
+	}
 	.open-menu{
 		color: #ffffff;
 		cursor: pointer;
@@ -989,6 +992,7 @@ div{
 				font-size: 16px !important;
 				line-height: 20px !important;
 				margin-bottom: 22px !important;
+				width: 522px;
 			}
 
 			.actions.content{
