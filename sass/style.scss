@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
 @import "assets/variables";
 
 @font-face {
@@ -17,6 +17,13 @@
 	font-family: 'Montserrat';
 	src: url(../fonts/Montserrat-Light.otf);
 	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url(../fonts/pt-serif.bold-italic.ttf);
+	font-weight: 700;
+	font-style: italic;
 }
 
 @mixin heading($h, $fs, $lh, $ls){
@@ -588,7 +595,7 @@ div{
 	}
 
 	label{
-		font-family: Montserrat;
+		font-family: 'Montserrat';
 		color:  #3a3d3f;
 		font-size: 22px;
 		margin-bottom: 24px;

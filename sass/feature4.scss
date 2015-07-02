@@ -190,7 +190,7 @@
 	.subtitle{
 		margin-bottom: 40px;
 		h4{
-			font-family: PTSerif;
+			font-family: 'PT Serif';
 			color:  #3cb6e3;
 			font-size: 34px;
 			font-weight: 700;
@@ -275,6 +275,14 @@
 
 		img.second-row{
 			margin-top: 40px;
+		}
+	}
+
+	.sf-touch{
+		.subtitle{
+			h4{
+				font-size: 31px;
+			}
 		}
 	}
 }
