@@ -80,7 +80,6 @@
 		font-family: Montserrat;
 		font-size: 18px; 
 		font-weight: 700;
-		line-height: 12px;
 		color: rgba(85, 85, 85, 0.45);
 		margin-left: 18px;
 	}
@@ -201,11 +200,15 @@
 		text-align: center;
 		margin-bottom: 60px;
 
-		& > p{
+        &:last-child{
+            margin-bottom: 0;
+        }        
+
+        & > p{
 			font-size: 24px;
 			margin-bottom: 29px;
 		}
-
+        
 		.author{
 			div{
 				display: inline-block;
@@ -298,8 +301,7 @@
 		.read-more{
 			display: block;
 			text-align: center;
-			margin-top: 24px;
-			margin-bottom: 30px;
+			margin-top: 11px;
 			letter-spacing: 2px;
 		}
 	}
@@ -328,16 +330,6 @@
             }
         }
 	}
-
-    .sf-header-foot{
-        span.whitepaper{
-            font-size: 16px;
-        }
-
-        span{
-            font-size: 15px;
-        }
-    }
 }
 
 @media (min-width: $md-screen) { 
@@ -525,10 +517,6 @@
 			& > p{
 				font-size: 22px;
 				margin-bottom: 24px;
-			}
-
-			&:last-child{
-				margin-bottom: 0;
 			}
 
 			.author{
