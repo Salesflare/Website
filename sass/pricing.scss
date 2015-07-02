@@ -45,15 +45,18 @@
 
 			p{
 				margin-bottom: 6px;
+                font-size: 14px;
 
 				&:last-child{
 					margin-bottom: 0;
 				}
-
-				&.blue{
-					color: #3cb6e3
-				}
 			}
+            
+            a{
+                font-size: 14px;
+                color: #3cb6e3;
+                text-decoration: none;
+            }
 		}
 
 		.header + .content{
@@ -75,7 +78,7 @@
 
 			p{
 				font-size: 23.2px;
-				line-height: 34px;
+				line-height: 24px;
 			}
 		}
 	}
@@ -140,19 +143,20 @@ a.sf-button{
 .sf-contact{
 	background-color: #ffffff;
 	padding: 40px 0;
+	text-align: center;
 
 	.list{
 		margin: 0 auto;
 		margin-bottom: 19px;
 		text-align: left;
-	}
-
-	.sf-button{
-		display: block;
+        .content{
+			p{
+				line-height: 24px;
+			}    
+        }
 	}
 
 	.tel{
-		text-align: center;
 		
 		img{
 			margin-right: 21px;
@@ -175,16 +179,6 @@ a.sf-button{
 }
 
 @media (max-width: $xs-screen){
-	.sf-boxes{
-		.sf-box{
-			.header{
-				p{
-					font-size: 14px;
-				}
-			}
-		}
-	}
-
 	.sf-button{
 		font-size:22px !important;
 	}
@@ -228,7 +222,6 @@ a.sf-button{
 
 				p{
 					display: inline-block;
-					font-size: 14px;
 					line-height: 17px;
 					margin-bottom: 0;
 				}
@@ -251,8 +244,6 @@ a.sf-button{
 
 				p{
 					font-size: 15px;
-  					line-height: 25px;
-
 				}
 			}
 		}
