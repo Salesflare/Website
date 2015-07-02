@@ -672,7 +672,7 @@ div{
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
 	.sf-header.larger.feature .sf-hero p{
-		margin-bottom: 385px;
+		margin-bottom: 405px;
 	}
 	body{
 		overflow-x: hidden;
@@ -873,6 +873,12 @@ div{
 				
 				margin-top: 22px;
 			}
+		}
+	}
+
+	.sf-header.feature.larger{
+		.sf-hero .container{
+			height: 96px;
 		}
 	}
 
