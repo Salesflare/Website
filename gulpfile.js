@@ -24,8 +24,11 @@ gulp.task('html', function() {
 });
 
 gulp.task('fav', function() {
-	return gulp.src('fav/**.*')
+	gulp.src('fav/*.ico')
 		.pipe(gulp.dest('dist'));
+	
+	gulp.src(['fav/**.*', '!fav/*.ico'])
+		.pipe(gulp.dest('dist/img/icon'));
 });
 
 gulp.task('root', ['html', 'fav'] ,function() {
