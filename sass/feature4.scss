@@ -190,7 +190,7 @@
 	.subtitle{
 		margin-bottom: 40px;
 		h4{
-			font-family: PTSerif;
+			font-family: 'PT Serif';
 			color:  #3cb6e3;
 			font-size: 34px;
 			font-weight: 700;
@@ -277,6 +277,14 @@
 			margin-top: 40px;
 		}
 	}
+
+	.sf-touch{
+		.subtitle{
+			h4{
+				font-size: 31px;
+			}
+		}
+	}
 }
 
 @media (min-width: $md-screen) {
@@ -292,7 +300,7 @@
 			bottom: 31px;
 		}
 
-		p{
+		.container .row > p{
 			text-align: center;
 			width: 760px;
 			margin: 0 auto;
@@ -304,18 +312,17 @@
 
 		.author{
 			.profile{
-				text-align: left;
 				width: 193px;
 				margin-left: 20px;
 				vertical-align: middle;
 
 				p {
-					display: inline;
-					width: 50%;
 					margin: 0;
+					text-align: left;
 					&.name{
 						font-size: 14px;
-						color: rgba(213, 213, 213, 0.75);
+						color: #ffffff;
+						letter-spacing: 2.4px;
 					}
 
 					&.company{

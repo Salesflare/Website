@@ -190,7 +190,6 @@
 			padding:{
 				top: 131px;
 				bottom: 135px;
-				left:261px;
 			}
 
 			background: {
@@ -236,6 +235,16 @@
 		padding: {
 			top: 39px;
 			bottom: 45px;
+		}
+	}
+
+	.sf-address-book{
+		background-color: #ffffff;
+
+		.first{
+			.content{
+				text-align: center;
+			}
 		}
 	}
 }
@@ -344,6 +353,7 @@
 					top: 125px;
 					right: 260px;
 					bottom: 125px;
+					left:261px;
 				}
 				
 				background-position-y: 24px;

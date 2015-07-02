@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700);
 @import "assets/variables";
 
 @font-face {
@@ -17,6 +17,13 @@
 	font-family: 'Montserrat';
 	src: url(../fonts/Montserrat-Light.otf);
 	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'PT Serif';
+	src: url(../fonts/pt-serif.bold-italic.ttf);
+	font-weight: 700;
+	font-style: italic;
 }
 
 @mixin heading($h, $fs, $lh, $ls){
@@ -286,12 +293,12 @@ div{
 		.arrow{
 			&.right{
 				text-align: left;
-				padding-left: 10px;
+				padding-left: 90px;
 			}
 
 			&.left{
 				text-align: right;
-				padding-right: 10px;
+				padding-right: 90px;
 			}
 
 			margin-top: 22px;
@@ -588,7 +595,7 @@ div{
 	}
 
 	label{
-		font-family: Montserrat;
+		font-family: 'Montserrat';
 		color:  #3a3d3f;
 		font-size: 22px;
 		margin-bottom: 24px;
@@ -749,6 +756,12 @@ div{
 	}
 	.sf-header.feature{
 		.sf-hero{
+			.arrow{
+				img{
+					width: 70px;
+					height: 70px;
+				}
+			}
 			p{
 				margin-bottom: 209px;
 			}
@@ -854,9 +867,8 @@ div{
 				}
 
 				padding: {
-					
-					left: 0;
-					right: 0;
+					left: 0 !important;
+					right: 0 !important;
 				}
 				
 				margin-top: 22px;
