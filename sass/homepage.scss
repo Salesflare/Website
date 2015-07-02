@@ -85,6 +85,9 @@
 	}
 }
 
+.whitepaper-link:hover .sf-header-foot{
+	background-color: #eaeaea;
+}
 .sf-logos {
 	@extend .gradient;
 	padding: 40px 0;
