@@ -3,7 +3,7 @@
 
 .sf-header{
 	background: {
-		image: url('../img/hero-pricing.jpg');
+		image: url('../img/hero-pricing-mobile.jpg');
 	}
 }
 
@@ -181,6 +181,12 @@ a.sf-button{
 
 	.sf-button{
 		font-size:22px !important;
+	}
+
+	.sf-tour{
+		h1{
+			font-size: 38px !important;
+		}
 	}
 }
 
