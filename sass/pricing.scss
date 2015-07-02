@@ -15,7 +15,7 @@
 		bottom: 20px;
 	}
     
-    .col-md-6:last-child {
+    .row:last-child .col-md-6:last-child {
         .sf-box {
             margin-bottom: 40px;
         }
