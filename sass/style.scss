@@ -669,6 +669,10 @@ div{
 	}
 }
 
+.whitepaper-link:hover{
+	background-color: #404043;
+}
+
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
 	.sf-header.larger.feature .sf-hero p{
