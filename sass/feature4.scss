@@ -292,7 +292,7 @@
 			bottom: 31px;
 		}
 
-		p{
+		.container .row > p{
 			text-align: center;
 			width: 760px;
 			margin: 0 auto;
@@ -304,18 +304,17 @@
 
 		.author{
 			.profile{
-				text-align: left;
 				width: 193px;
 				margin-left: 20px;
 				vertical-align: middle;
 
 				p {
-					display: inline;
-					width: 50%;
 					margin: 0;
+					text-align: left;
 					&.name{
 						font-size: 14px;
-						color: rgba(213, 213, 213, 0.75);
+						color: #ffffff;
+						letter-spacing: 2.4px;
 					}
 
 					&.company{
