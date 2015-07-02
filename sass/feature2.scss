@@ -7,6 +7,10 @@
 	}
 }
 
+a{
+	text-transform: none;
+}
+
 .sf-one-column{
 	padding: {
 		top: 59px;
@@ -167,7 +171,7 @@
 
 	p:first-child{
 		color:  #ffffff;
-		font-size: 14px;
+		font-size: 17px;
 		margin-bottom: 24px;
 	}
 
@@ -229,6 +233,13 @@
 
 		span, .col-md-4 span{
 			font-size: 15px;
+		}
+	}
+
+	.sf-collaborate{
+		padding: {
+			top: 39px;
+			bottom: 45px;
 		}
 	}
 }
