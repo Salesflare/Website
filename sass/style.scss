@@ -19,13 +19,6 @@
 	font-weight: 100;
 }
 
-@font-face {
-	font-family: 'PT Serif';
-	src: url(../fonts/pt-serif.bold-italic.ttf);
-	font-weight: 700;
-	font-style: italic;
-}
-
 @mixin heading($h, $fs, $lh, $ls){
 	h#{$h}{
 		font-size: #{$fs}px;
