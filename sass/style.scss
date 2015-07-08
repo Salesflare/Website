@@ -668,6 +668,10 @@ div{
 
 // MOBILE CLASSES
 @media (max-width: $xs-screen) { 
+    @-ms-viewport {
+        width: 600px;   
+    }
+    
 	.sf-header.larger.feature .sf-hero p{
 		margin-bottom: 405px;
 	}
