@@ -254,10 +254,6 @@ div{
 		height: 2px;
 		border-top: 0 !important;
 	}
-
-	hr.feature{
-		margin-bottom: 128px;
-	}
 }
 
 
@@ -298,6 +294,10 @@ div{
 			margin-bottom: 30px
 		}
 	}
+    
+	hr{
+		margin-bottom: 128px;
+	}    
 }
 .sf-tour{
 	background-color: #3cb6e3;

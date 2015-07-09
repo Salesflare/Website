@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var fileinclude = require('gulp-file-include');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
@@ -20,7 +21,11 @@ gulp.task('scripts', function(){
 
 gulp.task('html', function() {
 	return gulp.src('*.html')
-		.pipe(gulp.dest('dist'));
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('fav', function() {
@@ -32,7 +37,7 @@ gulp.task('fav', function() {
 });
 
 gulp.task('root', ['html', 'fav'] ,function() {
-    return gulp.src(['*', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav'])
+    return gulp.src(['*', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav', '!partials'])
     	.pipe(gulp.dest('dist'));
 });
 
