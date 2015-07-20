@@ -37,7 +37,7 @@ gulp.task('fav', function() {
 });
 
 gulp.task('root', ['html', 'fav'] ,function() {
-    return gulp.src(['*', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav', '!partials'])
+    return gulp.src(['*', '!*.html', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav', '!partials'])
     	.pipe(gulp.dest('dist'));
 });
 
