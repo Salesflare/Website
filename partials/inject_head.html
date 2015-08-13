@@ -29,6 +29,13 @@
 
 <!-- Flare (pointing to staging API) -->
 
+<script src="http://lib.salesflare.com/discuss.js/dist/discuss.js"></script>
+<!-- XDStore uses easyXDM which uses json -->
+<script type="text/javascript" src="http://lib.salesflare.com/easyXDM-2.4.19.3/easyXDM.min.js"></script>
+<script type="text/javascript">
+    easyXDM.DomHelper.requiresJSON("http://lib.salesflare.com/easyXDM-2.4.19.3/json2.js");
+</script>
+<script type="text/javascript" src="http://lib.salesflare.com/xdstore.js/XDStore.js"></script>
 <script src="http://track.salesflare.com/flare_migrate.js"></script>
 
 <script>
