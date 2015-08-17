@@ -1,68 +1,114 @@
 <!DOCTYPE html>
 <html>
+	<head>
 
-<head>
+		@@include('./partials/inject_head.html')    
 
-    @@include('./partials/inject_head.html')    
-    
-    <link rel="stylesheet" type="text/css" href="css/whitepaper.css">
+		<link rel="stylesheet" type="text/css" href="css/whitepaper.css">
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-    @@include('./partials/mobile_menu.html')
+		@@include('./partials/mobile_menu.html')
 
-    <!-- header -->
+		<!-- header -->
 
-    <div class="sf-header feature larger">
+		<div class="sf-header feature">
 
-        @@include('./partials/menu.html')
-        
-        <!-- hero -->
-        <div class="sf-hero">
-            <div class="container">
-                <div class="row">
-                    <div>
-                        <h1>Whitepaper</h1>
-                        <p>The augmented sales team</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end hero -->
-    </div>
+			@@include('./partials/menu.html')
 
-    <div class="sf-one-column">
-        <div class="container">
-            <div class="row">
-                <h3>Download the whitepaper</h3>
-                <div class="subtitle">
-                    <p>Please fill out the form below.</p>
-                </div>
-                <form class="sf-form" action="https://salesflare.us8.list-manage.com/subscribe/post?u=e6b1e240fe7c654b0536c1e63&amp;id=9edb0e4d7a" method="post">
-                    <fieldset>
-                        <label>Name</label>
-                        <input type="text" name="NAME" value="" placeholder="">
-                        <label>Work email address</label>
-                        <input type="email" name="EMAIL" value="" placeholder="">
-                        <label>Phone number</label>
-                        <input type="tel" name="PHONE" value="" placeholder="">
-                        <label>Role</label>
-                        <input type="text" name="ROLE" value="" placeholder="">
-                        <label>Company name</label>
-                        <input type="text" name="COMPANY" value="" placeholder="">
-                        <button type="submit" class="sf-button">Download</button>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
+			<!-- hero -->
+			<div class="sf-hero">
+				<div class="container">
+					<div class="row">
+						<div>
+							<h1>Whitepaper</h1>
+							<p>The augmented sales team</p>
+							<div class="sf-hero-button">
+								<a class="" href="#download" title="Download">Download</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end hero -->
+		</div>
 
-    @@include('./partials/footer.html')
-    
-    @@include('./partials/inject_foot.html')
-    
-</body>
+		<!-- end of header -->
+		<div class="sf-two-columns sf-info">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 first">
+						<div class="content">
+							<h3>8 rules to boost your sales performance.</h3>
+							<p>
+								Many companies implement a CRM system to support their sales organization, hoping that it will dramatically increase their sales performance. Still, as many as 55 to 70% of CRM implementations fail according to studies of Gartner and the Butler Group.
+							</p>
+							<p>
+								This whitepaper explores why this happens and transforms it into 8 concrete rules for augmenting sales teams with software. Pragmatic and powerful rules that we take at heart at Salesflare.
+							</p>
+							<p>
+								If you are working to improve your sales performance, drive more revenue through smart technology, or to make your sales team happier, this whitepaper is for you.
+							</p>
+						</div>
+					</div>
+					<div class="col-md-6 second">
+						<div class="content">
+							<div>
+								<img src="img/whitepaper-icons-mobile.png" alt="" class="only-mobile">
+								<img src="img/whitepaper-icons.png" alt="" class="no-mobile">
+							</div>
+						</div>
+					</div>
+				</div>
 
+			</div>
+		</div>
+
+		<div class="sf-quote">
+			<p>"When you combine the forces of machines and humans, you get even more phenomenal results.”</p>
+		</div>
+
+		<div class="sf-download sf-two-columns">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 image first full-col">
+						<div class="content">
+							<p>Some quotes from the whitepaper:</p>
+							<div>“Nudges directly related to real sales activities can be 
+								far more effective than direct instructions or 
+								enforcement of rules.”</div>
+							<div>“A proper mobile sales management tool should work
+								like, say, Facebook Messenger: fast, easy and efficient.”</div>
+						</div>
+					</div>
+					<div class="col-md-6 second" id="download">
+						<p>Download the whitepaper</p>
+						<form class="sf-form" action="https://salesflare.us8.list-manage.com/subscribe/post?u=e6b1e240fe7c654b0536c1e63&amp;id=9edb0e4d7a" method="post">
+							<fieldset>
+								<label>Name</label>
+								<input type="text" name="NAME" value="" placeholder="Enter your name...">
+								<label>Work email address</label>
+								<input type="email" name="EMAIL" value="" placeholder="Enter your work email address...">
+								<label>Phone number</label>
+								<input type="tel" name="PHONE" value="" placeholder="Enter your phone number...">
+								<label>Role</label>
+								<input type="text" name="ROLE" value="" placeholder="Enter your role...">
+								<label>Company name</label>
+								<input type="text" name="COMPANY" value="" placeholder="Enter your company name...">
+								<button type="submit" class="sf-button">Download</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		@@include('./partials/footer.html')
+
+		@@include('./partials/inject_foot.html')
+
+	</body>
 </html>
