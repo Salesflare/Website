@@ -19,11 +19,12 @@
   "devDependencies": {
     "angular": "^1.4.1",
     "gulp": "^3.9.0",
+    "gulp-file-include": "^0.11.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^2.3.0",
     "gulp-minify-css": "^1.1.6",
     "gulp-sass": "^2.0.1",
     "gulp-uglify": "^1.2.0",
-    "gulp-file-include": "^0.11.1",
     "imagemin-gifsicle": "^4.2.0",
     "imagemin-optipng": "^4.3.0"
   }

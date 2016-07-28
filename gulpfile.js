@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var ghPages = require('gulp-gh-pages');
 var sass = require('gulp-sass');
 var fileinclude = require('gulp-file-include');
 var minifyCss = require('gulp-minify-css');
@@ -58,6 +59,10 @@ gulp.task('fonts', function(){
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('default', ['styles', 'scripts', 'root', 'fonts', 'img', 'watch']);
 
