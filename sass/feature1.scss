@@ -8,7 +8,7 @@
 }
 
 .sf-info{
-	background-color: #d2d2d2;
+	background-color: #3d4d65;
 
 	.first{
 		background-color: #ffffff;
@@ -21,7 +21,7 @@
 	}
 
 	.second{
-		background-color: #d2d2d2;
+		background-color: #3d4d65;
 
 		.content{
 			padding: {
@@ -32,7 +32,9 @@
 			text-align: center;
 
 			.contact-img{
-				margin-bottom: 29px;
+				img{
+					width: 368px;
+				}
 			}
 		}
 	}
@@ -234,22 +236,12 @@
 				padding: {
 					left: 123px;
 					top: 107px;
-					bottom: 109px;
+					bottom: 64px;
 				}
 
 				.contact-img{
 					img{
-						width: 160px;
-						height: 141px;
-					}
-
-					margin-bottom: 26px;
-				}
-
-				.social-img{
-					img{
-						width: 352px;
-						height: 50px;
+						width: 368px;
 					}
 				}
 			}
