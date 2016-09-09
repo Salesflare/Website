@@ -11,6 +11,39 @@ html, body {
 	};
 }
 
+.sf-info{
+	background-color: #3d4d65;
+
+	.first{
+		background-color: #ffffff;
+		.content{
+			padding: {
+				top: 39px;
+				bottom: 37px;
+			}
+		}
+	}
+
+	.second{
+		background-color: #3d4d65;
+
+		.content{
+			padding: {
+				top: 114px;
+				bottom: 114px;
+			}
+
+			text-align: center;
+
+			.contact-img{
+				img{
+					width: 368px;
+				}
+			}
+		}
+	}
+}
+
 .sf-testimonial{
 	.wrapper{
 		@extend .gradient;
@@ -193,6 +226,39 @@ html, body {
 	.sf-header{
 		background: {
 			image: url('../img/hero-feature1.jpg');
+		}
+	}
+
+	.sf-info{
+		.first{
+			.content{
+				padding: {
+					top: 118px;
+					bottom: 117px;
+					left: 79px;
+					right: 51px;
+				}
+
+				p{
+					width: 432px;
+				}
+			}
+		}
+
+		.second{
+			.content{
+				padding: {
+					left: 123px;
+					top: 107px;
+					bottom: 64px;
+				}
+
+				.contact-img{
+					img{
+						width: 368px;
+					}
+				}
+			}
 		}
 	}
 
