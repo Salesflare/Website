@@ -91,7 +91,8 @@
 
 .sf-logos {
 	@extend .gradient;
-	padding: 40px 0;
+	text-align: center;
+	padding: 23px 0;
 
 	background: rgb(245,245,245); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -109,7 +110,15 @@
 		margin: 0 auto;
 	}
 
+	p {
+		font-family: 'Montserrat';
+		font-size: 16px;
+		font-weight: 100;
+		margin-bottom: 16px;
+	}
+
 	img{
+		width: 48px;
 		margin-right: 70px;
 
 		&:last-child{
@@ -311,7 +320,14 @@
 	}
 
 	.sf-logos{
-		text-align: center;
+		p {
+			margin-bottom: 18px;
+		}
+
+		img {
+			width: 56px;
+    		margin-right: 108px;
+		}
 		
 		img.no-margin-mobile{
 			margin-right: 0;
@@ -416,7 +432,7 @@
 
 
 	.sf-logos {
-        padding: 12px 0;
+        padding: 23px 0;
 		.row{
 			width: 756px;
 		}
