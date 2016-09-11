@@ -170,7 +170,11 @@
 	}
 }
 
-.sf-logos{
+.sf-logos {
+	@extend .gradient;
+	text-align: center;
+	padding: 23px 0;
+
 	background: rgb(46,46,48); /* Old browsers */
 	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzJlMmUzMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ2JSIgc3RvcC1jb2xvcj0iIzJlMmYzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMyZjNjNDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -182,26 +186,37 @@
 	background: linear-gradient(to bottom,  rgba(46,46,48,1) 0%,rgba(46,47,49,1) 46%,rgba(47,60,66,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e30', endColorstr='#2f3c42',GradientType=0 ); /* IE6-8 */
 
-	padding: 40px 0;
-
-	p{
-		text-align: center;
-		margin-bottom: 11px;
-		font-family: 'Montserrat';
-	}
-
 	.row{
 		margin: 0 auto;
-	}
 
-	img{
-		margin-right: 70px;
+		div{
+			width: 128px;
+			display: table-cell;
 
-		&:last-child{
-			margin-right: 0;
+			img {
+				width: 40px;
+			}
+
+			p {
+				font-family: 'Montserrat';
+				font-size: 13px;
+				font-weight: 100;
+				margin-top: 8px;
+				margin-bottom: 0;
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
 		}
 	}
 
+	p {
+		font-family: 'Montserrat';
+		font-size: 16px;
+		font-weight: 100;
+		margin-bottom: 16px;
+	}
 }
 
 .sf-touch{
@@ -283,18 +298,6 @@
 
 		span, .col-md-4 span{
 			font-size: 15px;
-		}
-	}
-
-	.sf-logos{
-		text-align: center;
-		
-		img.no-margin-mobile{
-			margin-right: 0;
-		}	
-
-		img.second-row{
-			margin-top: 40px;
 		}
 	}
 
@@ -443,12 +446,10 @@
 		}
 	}
 
-	.sf-logos{
-		p{
-			margin-bottom: 21px;
-		}
+	.sf-logos {
+        padding: 23px 0;
 		.row{
-			width: 756px;
+			width: 640px;
 		}
 	}
 

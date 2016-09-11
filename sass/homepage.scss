@@ -108,6 +108,27 @@
 
 	.row{
 		margin: 0 auto;
+
+		div{
+			width: 128px;
+			display: table-cell;
+
+			img {
+				width: 40px;
+			}
+
+			p {
+				font-family: 'Montserrat';
+				font-size: 13px;
+				font-weight: 100;
+				margin-top: 8px;
+				margin-bottom: 0;
+			}
+
+			&:last-child{
+				margin-right: 0;
+			}
+		}
 	}
 
 	p {
@@ -115,15 +136,6 @@
 		font-size: 16px;
 		font-weight: 100;
 		margin-bottom: 16px;
-	}
-
-	img{
-		width: 48px;
-		margin-right: 70px;
-
-		&:last-child{
-			margin-right: 0;
-		}
 	}
 }
 
@@ -319,25 +331,6 @@
 		}
 	}
 
-	.sf-logos{
-		p {
-			margin-bottom: 18px;
-		}
-
-		img {
-			width: 56px;
-    		margin-right: 108px;
-		}
-		
-		img.no-margin-mobile{
-			margin-right: 0;
-		}	
-
-		img.second-row{
-			margin-top: 40px;
-		}
-	}
-
 	.sf-news{
 		p{
 			font-size: 24px;
@@ -434,7 +427,7 @@
 	.sf-logos {
         padding: 23px 0;
 		.row{
-			width: 756px;
+			width: 640px;
 		}
 	}
 
