@@ -42,10 +42,27 @@
 	
 	.first{
 		.content{
+			position: relative;
 			max-width: 356px;
 			padding: {
 				top: 62px;
-				bottom: 64px;
+			}
+
+			.integration-apps {
+				background-repeat: no-repeat;
+				background-image: url(../img/zapier-apps.svg);
+				width: 270px;
+				height: 270px;
+				background-size: 270px;
+				bottom: 117px;
+				left: 134px;
+				position: absolute;
+				z-index: 1;
+			}
+
+			img {
+				width: 122%;
+				position: relative;
 			}
 		}
 	}
@@ -53,7 +70,10 @@
 	.second{
 		.content{
 			max-width: 539px;
-			padding-top: 39px;
+			padding: {
+				top: 39px;
+				bottom: 64px;
+			}
 		}
 	}
 }
@@ -297,7 +317,7 @@
 	.sf-quote{
 		padding: {
 			top: 33px;
-			bottom: 31px;
+			bottom: 51px;
 		}
 
 		.container .row > p{
@@ -340,7 +360,7 @@
 				float: right;
 				padding: {
 					top: 122px;
-					bottom: 122px;
+					bottom: 0px;
 				}
 
 				margin-right: 56px;
@@ -352,8 +372,7 @@
 				float: left;
 				max-width: 474px;
 				padding: {
-					top: 62px;
-					bottom: 63px;
+					top: 100px;
 				}
 				margin-left: 56px;
 				h3{
