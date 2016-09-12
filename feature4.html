@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>CRM integration</title>
+    <title>Integrations</title>
 
     <script type="text/javascript">
     if (screen.width < 768) {
@@ -13,6 +13,7 @@
 </script>    
 <meta charset="utf-8">
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+<link href="http://rubentd.com/bower_components/jquery.gifplayer/dist/gifplayer.css" rel="stylesheet">
 
 <!-- favicon -->
 <link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
@@ -88,7 +89,8 @@ window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
 <noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=845875802114448&amp;ev=PixelInitialized" /></noscript>
-    
+
+
     <link rel="stylesheet" type="text/css" href="css/feature4.css">
 
 </head>
@@ -172,8 +174,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 col-md-push-1 col-xs-12">
-                        <h1>Get a specialized sales platform</h1>
-                        <p>Have an enterprise CRM? <br class="only-mobile" />We seamlessly plug in.</p>
+                        <h1>Integrate your sales toolset</h1>
+                        <p>Boost your productivity. <br class="only-mobile" />Connect your sales tools.</p>
                     </div>
                     <div class="col-md-1 col-md-pull-10 col-xs-6 left arrow">
                         <a href="feature3.html">
@@ -195,7 +197,7 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
     <div class="sf-quote">
         <div class="container">
             <div class="row">
-                <p>“We used to believe that our sales team just had to work in the CRM. Looking back, we’re happy that we got an intelligent sales tool. Salesflare and our CRM integrate seamlessly.”</p>
+                <p>“Our team got a huge productivity boost when we started using Salesflare. It does not just gather a wealth of information. This powerful data pool can be connected to other systems as well.”</p>
                 <div class="author">
                     <div class="thumb">
                         <img src="img/costumer4.png" alt="Didier Vermeiren"/>
@@ -215,13 +217,14 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
             <div class="row">
                 <div class="col-md-6 second col-md-push-6">
                     <div class="content">
-                        <h3>Out-of-the-box integration with enterprise CRM.</h3>
-                        <p>Salesflare works in perfect sync with Salesforce and Microsoft Dynamics. You can now start enriching you CRM with all sales related customer data that is collected and created in Salesflare. CRM data is also used by Salesflare to help the sales team to follow up their customers.</p>
+                        <h3>Zapier integration</h3>
+                        <p>Zapier gives you the power to integrate Salesflare with hundreds of other apps you use like Mailchimp, Google Contacts, and Slack to automate the tedious tasks in your workflow.</p>
                     </div>
                 </div>
                 <div class="col-md-6 first col-md-pull-6">
                     <div class="content">
-                        <img src="img/crm.jpg" alt="">
+                        <div class="integration-apps"></div>
+                        <img src="img/phone-zapier.png" alt="Phone zapier">
                     </div>
                 </div>
             </div>
@@ -274,24 +277,28 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
 
     <div class="sf-logos">
         <div class="container">
+            <p>Salesflare works with</p>
             <div class="row">
-                <p>Salesflare is trusted by</p>
-            </div>
-            <div class="row">
-                <img src="img/iminds-bw.png" alt="" />
-
-
-                <img src="img/startit-bw.png" alt="" />
-
-
-                <img src="img/idealabs-bw.png" class="no-margin-mobile" alt="" />
-
-
-                <img src="img/iwt-bw.png" class="second-row" alt="" />
-
-
-                <img src="img/kbc-bw.png" class="second-row" alt="" />
-
+                <div>
+                    <img src="img/gmail.png" alt="Gmail" />
+                    <p>Gmail</p>
+                </div>
+                <div>
+                    <img src="img/office365.png" alt="Office 365" />
+                    <p>Office 365</p>
+                </div>
+                <div>
+                    <img src="img/exchange.png" alt="Exchange" />
+                    <p>Exchange</p>
+                </div>
+                <div>
+                    <img src="img/icloud.png" alt="iCloud" />
+                    <p>iCloud</p>
+                </div>
+                <div>
+                    <img src="img/zapier.png" alt="Zapier" />
+                    <p>Zapier</p>
+                </div>
             </div>
         </div>
     </div>
@@ -320,15 +327,13 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
     </div>
     <!-- continuing the tour -->
     <div class="tour-wrapper">
-        <a href="feature1.html">
+        <a href="signup.html">
             <div class="sf-tour">
                 <div class="container">
                     <div class="row">
                         <div>
-                            <h1>See The Tour Again</h1>
-                            <div onclick="window.location.href = 'pricing.html'; return false;">
-                                <p class="underline">Or discover our pricing</p>
-                            </div>
+                            <h1>Start 14-day free trial</h1>
+                            <p>No credit card required</p>
                         </div>
                         <div>
                             <img src="img/arrow-tour.png" alt="" />
@@ -351,6 +356,8 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
                         <li><a href="feature1.html">Product Tour</a>
                         </li>
                         <li><a href="pricing.html">Pricing</a>
+                        </li>
+                        <li><a href="terms.html" target="_blank">Terms of Service</a>
                         </li>
                         <li><a href="privacy.html" target="_blank">Privacy Policy</a>
                         </li>
@@ -392,8 +399,11 @@ window._fbq.push(['track', 'PixelInitialized', {}]);
         </div>
     </div>
 </div>
+
     
     <script src="https://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-visible/1.2.0/jquery.visible.min.js" type="text/javascript"></script>
+<script src="http://rubentd.com/bower_components/jquery.gifplayer/dist/jquery.gifplayer.js" type="text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="js/script.js"></script>
 
@@ -434,6 +444,7 @@ var google_remarketing_only = true;
 <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/992317151/?value=0&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
+
     
 </body>
 
