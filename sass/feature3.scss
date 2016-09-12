@@ -308,7 +308,8 @@
 				padding: {
 					top: 131px;
 					bottom: 29px;
-					right: 104px;
+					left: 79px;
+					right: 51px;
 				}
 			}
 
@@ -319,7 +320,9 @@
 
 		.second{
 			.content{
-				/*padding-left: 90px;*/
+				img {
+					margin-left: 33px
+				}
 			}
 			text-align: left;
 		}
