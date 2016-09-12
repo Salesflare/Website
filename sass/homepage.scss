@@ -349,9 +349,6 @@
 	.sf-header{
 		.sf-hero{
 			overflow-y: visible;
-			padding: {
-				bottom: 60px;
-			}
 
 			h1{
 				margin: {
@@ -383,12 +380,6 @@
 		}
 
 		.behind-mockup{
-			background: {
-				image: url('../img/faces.jpg') ;
-				repeat: no-repeat;
-				position-x: 34px;
-			}
-
 			text-align: left;
 			position: relative;
 			height: 604px;
@@ -396,9 +387,9 @@
 
 			img{
 				position: absolute;
-				/*left: 171px;*/
-				top: 57px;
-				height: 650px;
+				top: 29px;
+				left: 30px;
+				height: 610px;
 			}
 		}
 	}
