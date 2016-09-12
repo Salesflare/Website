@@ -147,10 +147,10 @@
 
 	.second{
 		.content{
-			padding: 39px 0;
+			/*padding: 39px 0;*/
 		}
 		text-align: center;
-		background-color: #d5d5d5;
+		/*background-color: #d5d5d5;*/
 	}
 
 }
@@ -308,7 +308,8 @@
 				padding: {
 					top: 131px;
 					bottom: 29px;
-					right: 104px;
+					left: 79px;
+					right: 51px;
 				}
 			}
 
@@ -319,7 +320,9 @@
 
 		.second{
 			.content{
-				padding-left: 90px;
+				img {
+					margin-left: 33px
+				}
 			}
 			text-align: left;
 		}
@@ -352,7 +355,6 @@
 		.first{
 			.content{
 				padding:{
-					top: 125px;
 					right: 290px;
 					bottom: 125px;
 					left: 230px;
