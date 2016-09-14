@@ -223,14 +223,21 @@ div{
 			}
 		}
 
-		.sf-nav-button{
+		.sf-menu.sf-menu-actions {
 			float: right;
-			width: 180px;
+			margin-top: -13px;
 
-			a{
+			ul{
+				li{
+					margin-right: 20px;
+				}
+			}
+
+			.sf-nav-button {
+				width: 180px;
+				display: inline-block;
+
 				@extend .styless-anchor;
-
-				display: block;
 
 				border: 2px {
 					style: solid;
