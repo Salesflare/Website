@@ -1,6 +1,10 @@
 $('document').ready(function(){
 	$('.animated-gif').gifplayer();
 
+	if ($('.animated-gif').visible()) {
+		$('.animated-gif').gifplayer('play');
+	}
+
 	$('.open-menu').click(function(){
 		$('.sf-menu-mobile').slideDown('slow');;
 	});
