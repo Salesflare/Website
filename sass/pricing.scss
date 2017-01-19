@@ -44,7 +44,6 @@
 			}
 
 			p{
-				margin-bottom: 6px;
                 font-size: 14px;
 
 				&:last-child{
@@ -221,8 +220,7 @@ a.sf-button{
 				}
 
 				p{
-					display: inline-block;
-					line-height: 17px;
+					display: block;
 					margin-bottom: 0;
 				}
 			}
