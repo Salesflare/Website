@@ -151,7 +151,42 @@
     }
     a{
         text-decoration: none;
+		outline: none;
     }
+	h1 {
+		text-align: center;
+		font-family: 'Montserrat';
+		font-size: 27px;
+		color: black;
+		font-weight: 600;
+		line-height: 34px;
+		margin-bottom: 4px;
+	}
+	h2 {
+		text-align: center;
+		font-family: 'Montserrat';
+		font-size: 23px;
+		color: black;
+		font-weight: 500;
+		margin-bottom: 16px;
+	}
+	p {
+		text-align: center;
+		font-family: 'Montserrat';
+		font-size: 16px;
+		font-weight: 100;
+		margin-bottom: 46px;
+	}
+	.play {
+		text-align: center;
+    	height: 76px;
+		margin-bottom: 0px;
+
+		i {
+			font-size: 78px;
+			color: #e74c3c;
+		}
+	}
 	.sf-box{
 		border-radius: 5px;
 		background-color:  #ffffff;
