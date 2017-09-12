@@ -156,6 +156,10 @@ a.sf-button{
 	}
 
 	.tel{
+
+		&:hover {
+			text-decoration: underline;
+		}
 		
 		img{
 			margin-right: 21px;

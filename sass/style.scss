@@ -132,6 +132,10 @@ h1,h2,h3,h4,h5,h6{
 	};
 }
 
+a:hover {
+	text-decoration: none
+}
+
 @include heading(1, 46.9, 46, -1.4) {};
 @include heading(2, 36, 26.4, 0) {};
 @include heading(3, 22.78, 26.4, -0.89) {};
@@ -741,7 +745,6 @@ div{
 				}
 				
 				a{
-					text-decoration: none;
 					font-family: 'Montserrat';
 					color:  rgba(238, 238, 238, 0.7);
 					font-size: 24px;
