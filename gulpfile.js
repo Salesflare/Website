@@ -5,8 +5,6 @@ var fileinclude = require('gulp-file-include');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var imageminOptipng = require('imagemin-optipng');
-var imageminGifsicle = require('imagemin-gifsicle');
 
 gulp.task('styles', function() {
 	return gulp.src('sass/*.scss')
@@ -44,12 +42,12 @@ gulp.task('root', ['html', 'fav'] ,function() {
 
 gulp.task('img', function(){
 	return gulp.src('img/*.{gif,png,svg,jpg,jpeg}')
-		.pipe(imagemin({
-		    progressive: true,
-
-		    use: [imageminOptipng({optimizationLevel: 5})]
-		}))
-		.pipe(imageminGifsicle({interlaced: true})())
+		.pipe(imagemin([
+		    imagemin.jpegtran({ progressive: true}),
+			imagemin.gifsicle({ interlaced: true }),
+			imagemin.optipng({ optimizationLevel: 5 }),
+			imagemin.svgo()
+		]))
 		.pipe(gulp.dest('dist/img'));
 });
 
