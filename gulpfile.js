@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
 var minifyCss = require('gulp-minify-css');
 var uglify = require('gulp-uglify');
@@ -8,7 +9,9 @@ var imagemin = require('gulp-imagemin');
 
 gulp.task('styles', function() {
 	return gulp.src('sass/*.scss')
-		.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(sourcemaps.init())
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/css'));
 });
 
@@ -50,7 +53,6 @@ gulp.task('img', function(){
 		]))
 		.pipe(gulp.dest('dist/img'));
 });
-
 
 gulp.task('fonts', function(){
 	return gulp.src('fonts/*')
