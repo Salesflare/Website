@@ -69,7 +69,7 @@ gulp.task('default', ['styles', 'scripts', 'root', 'fonts', 'img', 'watch']);
 
 //Watch task
 gulp.task('watch', function(){
-	gulp.watch('*.html', ['html']);
+	gulp.watch('**/*.html', ['html']);
 	gulp.watch('sass/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['scripts']);
 	gulp.watch('img/**.*', ['img']);

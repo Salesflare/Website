@@ -38,11 +38,23 @@
         <div class="container">
             <div class="row">
                 <h3 class="feature-h3 center">Pricing</h3>
+
+                <div class="row center currency-switcher">
+                    <div class="btn-group" data-toggle="buttons">
+                        <label class="btn btn-primary active">
+                            <input type="radio">$</input>
+                        </label>
+                        <label class="btn btn-primary">
+                            <input type="radio">€</input>
+                        </label>
+                    </div>
+                </div>
+
                 <div class="sf-box" style="display: table; margin-right: auto; margin-left: auto;">
                     <div class="header">
-                        <h3>$30</h3>
+                        <h3><span class="currency">$</span>30</h3>
                         <p>per user / month (billed annually)</p>
-                        <p>$35 billed monthly</p>
+                        <p><span class="currency">$</span>35 billed monthly</p>
                     </div>
                     <div class="content container wide">
                         <div class="item row">
@@ -69,6 +81,10 @@
                                 <p>In Outlook, Gmail and on mobile phones</p>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="row center currency-explainer">
+                        Pricing is in euros for Europe (incl. UK) and in dollars for the rest of the world.
                     </div>
                 </div>
             </div>
@@ -197,6 +213,12 @@
 
     @@include('./partials/inject_foot.html')
 
+    <script>
+        var currencies = $('.currency');
+        $('.currency-switcher').on('click', function (event) {
+            currencies.text(event.target.innerText);
+        });
+    </script>
 </body>
 
 </html>
