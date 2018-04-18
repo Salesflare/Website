@@ -1,0 +1,36 @@
+/* iubenda cookie policy banner */
+
+#iubenda-cs-banner {
+    background-color: #45464a !important;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12) !important;
+
+    .iubenda-cs-content {
+        background: #45464a !important;
+        padding: 20px 30px 20px !important;
+
+        .iubenda-cs-rationale {
+            max-width: none !important;
+        }
+
+        p:first-child {
+            font-family: montserrat !important;
+        }
+
+        p:last-child {
+            font-family: 'PT Serif' !important;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #iubenda-cs-banner {
+
+        .iubenda-banner-content {
+
+            p, a
+            {
+                font-size: 12px !important;
+            }
+        }
+    }
+}
