@@ -4,7 +4,8 @@
   "description": "The landing page of Salesflare",
   "main": "index.js",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",
