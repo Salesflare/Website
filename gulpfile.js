@@ -50,7 +50,7 @@ gulp.task('img', function(){
 			imagemin.gifsicle({ interlaced: true }),
 			imagemin.optipng({ optimizationLevel: 5 }),
 			imagemin.svgo()
-		]))
+		], { verbose: true }))
 		.pipe(gulp.dest('dist/img'));
 });
 
