@@ -4,5 +4,6 @@ sass/.sass-cache
 /css
 /dist
 /.publish
+/.idea
 *.zip
 .vscode
