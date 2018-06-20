@@ -23,7 +23,7 @@ gulp.task('scripts', function(){
 
 gulp.task('html', function() {
 
-	return gulp.src(['*.html', '!terms.html'])
+	return gulp.src('*.html')
         .pipe(fileinclude({
           prefix: '@@',
           basepath: '@file'
@@ -31,11 +31,6 @@ gulp.task('html', function() {
         .pipe(gulp.dest('dist'));
 });
 
-// To make sure the terms encoding is not getting messed up by fileInclude
-gulp.task('html-terms', function () {
-	
-	return gulp.src('terms.html').pipe(gulp.dest('dist'));
-});
 
 gulp.task('fav', function() {
 	gulp.src('fav/*.ico')
@@ -45,7 +40,7 @@ gulp.task('fav', function() {
 		.pipe(gulp.dest('dist/img/icon'));
 });
 
-gulp.task('root', ['html', 'html-terms', 'fav'] ,function() {
+gulp.task('root', ['html', 'fav'] ,function() {
     return gulp.src(['*', '!*.html', '!README.md', '!*.js', '!*.json', '!*.gitignore', '!sass', '!node_modules', '!dist', '!fav', '!partials'])
     	.pipe(gulp.dest('dist'));
 });
