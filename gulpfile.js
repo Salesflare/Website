@@ -67,6 +67,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('default', ['styles', 'scripts', 'root', 'fonts', 'img', 'watch']);
+gulp.task('dist', ['styles', 'scripts', 'root', 'fonts', 'img']);
 
 
 //Watch task
