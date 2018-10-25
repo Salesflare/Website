@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
+var ghPages = require('gulp-gh-pages-will');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
