@@ -13,20 +13,26 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>https://salesflare.com/compare</loc>
+  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://salesflare.com/compare/pipedrive-alternative</loc>
-  <lastmod>2018-11-07T17:48:21+00:00</lastmod>
+  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://salesflare.com/compare/hubspot-crm-alternative</loc>
-  <lastmod>2018-11-07T17:48:21+00:00</lastmod>
+  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://salesflare.com/compare/copper-crm-prosperworks-alternative</loc>
-  <lastmod>2018-11-07T17:48:21+00:00</lastmod>
+  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
