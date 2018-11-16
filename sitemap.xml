@@ -7,7 +7,7 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>http://salesflare.com/</loc>
+  <loc>https://salesflare.com</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
@@ -31,61 +31,55 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/pricing.html</loc>
+  <loc>https://salesflare.com/pricing.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/contactus.html</loc>
+  <loc>https://salesflare.com/contactus.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/whitepaper.html</loc>
+  <loc>https://salesflare.com/whitepaper.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/index.html</loc>
+  <loc>https://salesflare.com/feature1.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/feature1.html</loc>
+  <loc>https://salesflare.com/feature2.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/feature2.html</loc>
+  <loc>https://salesflare.com/feature3.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/feature3.html</loc>
+  <loc>https://salesflare.com/feature4.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/feature4.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://salesflare.com/privacy.html</loc>
+  <loc>https://salesflare.com/privacy.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>http://salesflare.com/terms.html</loc>
+  <loc>https://salesflare.com/terms.html</loc>
   <lastmod>2018-10-26T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.64</priority>
