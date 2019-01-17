@@ -7,86 +7,68 @@
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
-  <loc>https://salesflare.com</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/</loc>
+  <lastmod>2015-07-20T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/compare</loc>
-  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/feature1.html</loc>
+  <lastmod>2015-07-09T13:08:53+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/compare/pipedrive-alternative</loc>
-  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/pricing.html</loc>
+  <lastmod>2015-07-09T13:08:57+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/compare/hubspot-crm-alternative</loc>
-  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/contactus.html</loc>
+  <lastmod>2015-07-09T13:08:52+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/compare/copper-crm-prosperworks-alternative</loc>
-  <lastmod>2018-11-16T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/whitepaper.html</loc>
+  <lastmod>2015-07-09T13:08:59+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/pricing.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/index.html</loc>
+  <lastmod>2015-07-20T17:48:21+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/contactus.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/feature2.html</loc>
+  <lastmod>2015-07-09T13:08:55+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/whitepaper.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/feature3.html</loc>
+  <lastmod>2015-07-09T13:08:55+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/feature1.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/feature4.html</loc>
+  <lastmod>2015-07-09T13:08:56+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/feature2.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/privacy.html</loc>
+  <lastmod>2015-07-09T13:08:58+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://salesflare.com/feature3.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://salesflare.com/feature4.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://salesflare.com/privacy.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
-  <changefreq>always</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://salesflare.com/terms.html</loc>
-  <lastmod>2018-10-26T17:48:21+00:00</lastmod>
+  <loc>http://salesflare.com/signup.html</loc>
+  <lastmod>2015-07-09T13:08:59+00:00</lastmod>
   <changefreq>always</changefreq>
   <priority>0.64</priority>
 </url>
