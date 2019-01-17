@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var ghPages = require('gulp-gh-pages');
+var ghPages = require('gulp-gh-pages-will');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
@@ -22,6 +22,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('html', function() {
+
 	return gulp.src('*.html')
         .pipe(fileinclude({
           prefix: '@@',
@@ -29,6 +30,7 @@ gulp.task('html', function() {
         }))
         .pipe(gulp.dest('dist'));
 });
+
 
 gulp.task('fav', function() {
 	gulp.src('fav/*.ico')
@@ -65,6 +67,7 @@ gulp.task('deploy', function() {
 });
 
 gulp.task('default', ['styles', 'scripts', 'root', 'fonts', 'img', 'watch']);
+gulp.task('dist', ['styles', 'scripts', 'root', 'fonts', 'img']);
 
 
 //Watch task
