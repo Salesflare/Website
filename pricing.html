@@ -214,9 +214,9 @@
     @@include('./partials/inject_foot.html')
 
     <script>
-        var currencies = $('.currency');
+
         $('.currency-switcher div').on('click', function (event) {
-            currencies.text(event.target.innerText);
+            $('.currency').text(event.target.innerText);
         });
     </script>
 </body>
