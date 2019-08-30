@@ -367,6 +367,9 @@ if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"
     if (document.getElementById('sf-tour-signup')) {
         document.getElementById('sf-tour-signup').href += '?campaign=' + getCookie('campaign');
     }
+	if (document.getElementById('sf-pricing-signup-button')) {
+        document.getElementById('sf-pricing-signup-button').href += '?campaign=' + getCookie('campaign');
+    }
     if (getCookie('discount_code')) {
         if (document.getElementById('sf-menu-signup-button')) {
           document.getElementById('sf-menu-signup-button').href += '&discount_code=' + getCookie('discount_code');
@@ -377,8 +380,13 @@ if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"
         if (document.getElementById('sf-tour-signup')) {        
           document.getElementById('sf-tour-signup').href += '&discount_code=' + getCookie('discount_code');
         }
+		if (document.getElementById('sf-pricing-signup-button')) {        
+          document.getElementById('sf-pricing-signup-button').href += '&discount_code=' + getCookie('discount_code');
+        }
     }
   }
+  
+	
 </script>
 
 <!-- Google-code voor remarketingtag -->
