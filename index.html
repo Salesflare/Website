@@ -560,13 +560,13 @@ if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"
     if (params['utm_campaign'] && params['utm_campaign'].toLowerCase() === 'freemiumtest') {
       var campaign = 'freemium';
       var discount_code = 'freemium' + hash(params['utm_source'].toLowerCase() + '-' + params['utm_medium'].toLowerCase() + '-' + params['utm_content'].toLowerCase());
-      document.cookie = 'campaign=' + campaign + '; path=/';
-      document.cookie = 'discount_code=' + discount_code + '; path=/';
+      document.cookie = 'campaign=' + campaign + '; path=/; domain=salesflare.com;';
+      document.cookie = 'discount_code=' + discount_code + '; path=/; domain=salesflare.com;';
       window.history.replaceState(null, null, window.location.pathname);
     } else {
 	    var campaign = (params['utm_campaign'] || '') + '-' + (params['utm_source'] || '') + '-' + (params['utm_medium'] || '');
-        document.cookie = 'campaign=' + campaign + '; path=/';
-      	document.cookie = "discount_code=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie = 'campaign=' + campaign + '; path=/; domain=salesflare.com;';
+      	document.cookie = "discount_code=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=salesflare.com;";
     }
     
   }
