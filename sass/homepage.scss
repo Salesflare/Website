@@ -179,12 +179,11 @@
 	}
 	.play {
 		text-align: center;
-    	height: 76px;
 		margin-bottom: 0px;
 
-		i {
-			font-size: 78px;
-			color: #e74c3c;
+		iframe {
+			width: 640px;
+			height: 360px;
 		}
 	}
 	.sf-box{
@@ -358,7 +357,14 @@
 		margin-top: 37px;
 		margin-bottom: 37px;
 	}
-
+	.sf-boxes {
+		.play {
+			iframe {
+				width: 560px;
+				height: 315px;
+			}
+		}	
+	}
 	.sf-header-foot{
 		.read-more{
 			display: block;
