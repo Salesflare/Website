@@ -63,7 +63,7 @@ gulp.task('img', function() {
 
 	return gulp.src('img/*.{gif,png,svg,jpg,jpeg}')
 		.pipe(imagemin([
-		    imagemin.mozjpeg({ progressive: true}),
+		    imagemin.mozjpeg({ quality: 90, progressive: true}),
 			imagemin.gifsicle({ interlaced: true }),
 			imagemin.optipng({ optimizationLevel: 5 }),
 			imagemin.svgo()
