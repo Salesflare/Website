@@ -21,7 +21,7 @@
   "devDependencies": {
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-file-include": "^2.1.1",
+    "gulp-file-include": "^2.2.2",
     "gulp-gh-pages-will": "^0.5.5",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.0.2",
