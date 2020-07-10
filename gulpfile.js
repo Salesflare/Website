@@ -85,10 +85,10 @@ gulp.task('deploy', function() {
 
 //Watch task
 gulp.task('watch', (done) => {
-	gulp.watch('**/*.html', ['html']);
-	gulp.watch('sass/*.scss', ['styles']);
-	gulp.watch('js/*.js', ['scripts']);
-	gulp.watch('img/**.*', ['img']);
+	gulp.watch('**/*.html', gulp.series('html'));
+	gulp.watch('sass/*.scss', gulp.series('styles'));
+	gulp.watch('js/*.js', gulp.series('scripts'));
+	gulp.watch('img/**.*', gulp.series('img'));
 
 	return done();
 });
