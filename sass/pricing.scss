@@ -333,6 +333,7 @@ a.sf-button{
 	[data-md-tooltip]:before {
 		min-width: 300px;
 		width: max-content;
+		max-width: 500px;
 		position: absolute;
 		padding: 8px;
 		left: auto;
