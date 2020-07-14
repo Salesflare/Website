@@ -7,68 +7,27 @@
 	}
 }
 
+// Keep in mind that most classes have different properties for 
+// @media (min-width: $md-screen). So most desktop properties will be further down
+
 [data-md-tooltip] {
 	position: relative;
 }
 
+// tooltip defaults
 [data-md-tooltip]:before {
-	min-width: 300px;
-	max-width: 500px;
-	width: max-content;
-	white-space: pre-line;
+	white-space: normal;
 	content: attr(data-md-tooltip);
-	position: absolute;
-	bottom: -35px;
-	left: 50%;
 	padding: 8px;
-	transform: translateX(-50%) scale(0);
 	transition: transform 0.3s ease-in-out;
-	transform-origin: top;
 	background: #616161;
 	color: white;
-	border-radius: 2px;
+	border-radius: 5px;
 	font-size: 12px;
 	font-family: Roboto,sans-serif;
 	font-weight: 400;
+	z-index: 3; // activated currency hax z-index 2
 }
-
-[data-md-tooltip]:hover:before {
-	transform: translateX(-50%) scale(1);
-}
-
-[data-md-tooltip].md-tooltip--bottom:before {
-	left: auto;
-	right: -10px;
-	bottom: auto;
-	top: 50%;
-	transform: translate(100%, -50%) scale(0);
-	transform-origin: left center;
-}
-
-[data-md-tooltip].md-tooltip--bottom:hover:before {
-	transform: translate(100%, -50%) scale(1);
-}
-
-[data-md-tooltip].md-tooltip--left:before {
-	left: -15px;
-	right: auto;
-	bottom: auto;
-	top: 50%;
-	transform: translate(-100%, -50%) scale(0);
-	transform-origin: right center;
-}
-
-[data-md-tooltip].md-tooltip--left:hover:before {
-	transform: translate(-100%, -50%) scale(1);
-}
-
-.md-tooltip--top:before {
-	top: -35px;
-	bottom: auto;
-	transform: translateX(-50%) scale(0);
-	transform-origin: bottom center;
-}
-
 .sf-boxes{
 	background-color: #eaeaea;
 	padding: {
@@ -77,7 +36,6 @@
 	}
 
 	.features {
-		height: 345px;
 		display: flex;
 		flex-direction: column;
 	}
@@ -114,14 +72,14 @@
 	.sf-box{
 		border-radius: 5px;
 		background-color:  #ffffff;
-		width: 560px;
+		width:100%;
 		margin-bottom: 20px;
 		font-size: 23.6px;
 		line-height: 25px;
 
 		.header{
 			text-align: center;
-			padding: 34px 46px;
+			padding: 34px;
 			background-color: #f9f9f9;
 			border-bottom: 1px solid #eeeeee;
 
@@ -152,8 +110,12 @@
 			padding: {
 				top: 18px;
 				left: 26px ;
+				right: 26px;
 				bottom: 25px;
 			}
+		}
+		.first-item {
+			padding-bottom: 15px; //padding-top of .content - margin first check
 		}
 
 		.content{
@@ -206,23 +168,32 @@ a.sf-button{
 	display: flex;
 
 	margin-bottom: 12px !important;
-	
-	.check{
-		width: 40px;
-		height: 40px;
-		background: url('../img/check-list-mobile.png') no-repeat;
-		margin: 12px 0;
-	}
+
 
 	.info{
 		margin: auto 0 auto auto;
-		float: right;
+
+		i {
+			cursor: default;
+		}
 	}
-	.material-icons.md-18 { font-size: 18px; }
-	.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
-	.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
-	.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
-	.material-icons.bg-gray { color: #838d8f; }
+
+	.material-icons {
+		cursor: default;
+	}
+	
+	.material-icons.info-icon { 
+		font-size: 20px;
+		position: relative;
+		top: 3px;
+		margin-left: 2px;
+		color: #838d8f;
+	}
+
+	.material-icons.check-icon { 
+		font-size: 22px;
+		color: #39ac73;
+	}
 
 	.content{
 		padding: 0 !important;
@@ -236,7 +207,11 @@ a.sf-button{
 	p{
 		margin-top: auto;
 		margin-bottom: auto;
-		padding-top: 7px;
+
+		// keeps last word of feature text together with info icon
+		.icon-container{
+			white-space: nowrap;
+		}
 	}
 	
 
@@ -298,6 +273,53 @@ a.sf-button{
 			font-size: 38px !important;
 		}
 	}
+
+	// Make mobile screen scale nicer
+	.sf-pricing {
+		.container {
+			&.plan-container {
+				width: 80%;
+				max-width: 510px;
+			}
+		}
+	}
+
+	.sf-boxes .sf-box .first-item {
+		padding-bottom: 24px;
+	}
+
+	.item.row {
+		margin-bottom: 24px !important;
+	}
+
+	// On small screens default to center of screen
+	// Changing orientation of tooltips based on width of smaller devices is very complex with css alone
+	[data-md-tooltip]:before {
+		min-width: 300px;
+		max-width: 100%;
+		width: max-content;
+		position: fixed;
+		top: 40%;
+		left: 50%;
+		transform: translateX(-50%) scale(0);
+		transform-origin: center;
+	}
+	[data-md-tooltip]:hover:before {
+		transform: translateX(-50%) scale(1); 
+	}
+
+	[data-md-tooltip].md-tooltip--left:before {
+		top: 40%;
+		left: 50%;
+		position: fixed;
+
+		transform: translateX(-50%) scale(0);
+		transform-origin: center;
+	}
+
+	[data-md-tooltip].md-tooltip--left:hover:before {
+		transform: translateX(-50%) scale(1); 
+	}
 }
 
 @media (min-width: $md-screen) {
@@ -307,33 +329,71 @@ a.sf-button{
 		}
 	}
 
+	// On large screens default right with option left for furthest feature column
+	[data-md-tooltip]:before {
+		min-width: 300px;
+		width: max-content;
+		position: absolute;
+		padding: 8px;
+		left: auto;
+		right: -10px;
+		bottom: auto;
+		top: 50%;
+		transform: translate(100%, -50%) scale(0);
+		transform-origin: left center;
+	}
+	
+	[data-md-tooltip]:hover:before {
+		transform: translate(100%, -50%) scale(1);
+	}
+
+	[data-md-tooltip].md-tooltip--left:before {
+		left: -15px;
+		right: auto;
+		bottom: auto;
+		top: 50%;
+		transform: translate(-100%, -50%) scale(0);
+		transform-origin: right center;
+	}
+	
+	[data-md-tooltip].md-tooltip--left:hover:before {
+		transform: translate(-100%, -50%) scale(1);
+	}
+
+	// tooltips in pro plan list would go off screen
+	.mid[data-md-tooltip]:before {
+		max-width: 350px;
+	}
+
 	.sf-pricing .sf-box{
 		height: 289px;
 	}
 
 	.sf-boxes{
 
+		.features {
+			height: 360px;
+		}
+
 		.plans {
 			display: flex;
 		}
 
 		.sf-box{
-			width: 300px;
+			width: 296px;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 40px;
 
 			.header{
 				padding: {
-					top: 29px;
+					top: 28px;
 					bottom: 28px;
 				}
-				min-height: 200px;
 
 				h3{
 					font-size: 22px;
 					margin-bottom: 11px;
-					// line-height: 3.4px;
 				}
 
 				p{
@@ -346,6 +406,7 @@ a.sf-button{
 				padding: {
 					top: 24px;
 					left: 26px;
+					right: 26px;
 					bottom: 20px;
 				}
 			}
@@ -366,19 +427,19 @@ a.sf-button{
 
 	.item{
 		margin-bottom: 15px !important;
-	
-		.check{
-			width: 24px;
-			height: 24px;
-			background: url('../img/check-list.png') no-repeat;
-			margin: 12px 0;
-			min-width: 24px;
-			min-height: 24px;
+
+		.material-icons.info-icon { 
+			font-size: 14px;
+		}
+
+		.material-icons.check-icon { 
+			font-size: 20px;
+			margin-top: 2px;
 		}
 
 		.content{
-			max-width: 180px;
-			margin-left: 18px;
+			max-width: 100%;
+			margin-left: 14px;
 			display: flex;
   			justify-content: center;
   			align-items: center; 
@@ -438,5 +499,11 @@ a.sf-button{
 		.sf-box{
 			margin-bottom: 20px;
 		}
+	}
+}
+
+@media (min-width: $lg-screen) {
+	.mid[data-md-tooltip]:before {
+		max-width: 500px;
 	}
 }
