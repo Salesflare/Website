@@ -308,6 +308,14 @@ a.sf-button{
 		transform: translateX(-50%) scale(1); 
 	}
 
+	// Making the entire feature text trigger the tooltip,
+	// doesn't work well on mobile. Makes you click on different tooltips all the time
+	// .feature-text:hover {
+	// 	[data-md-tooltip]:before {
+	// 		transform: translateX(-50%) scale(1); 
+	// 	}
+	// }
+
 	[data-md-tooltip].md-tooltip--left:before {
 		top: 40%;
 		left: 50%;
@@ -320,6 +328,12 @@ a.sf-button{
 	[data-md-tooltip].md-tooltip--left:hover:before {
 		transform: translateX(-50%) scale(1); 
 	}
+
+	// .feature-text:hover {
+	// 	[data-md-tooltip].md-tooltip--left:before {
+	// 		transform: translateX(-50%) scale(1); 
+	// 	}
+	// }
 }
 
 @media (min-width: $md-screen) {
@@ -348,6 +362,13 @@ a.sf-button{
 		transform: translate(100%, -50%) scale(1);
 	}
 
+	// Make feature text hover trigger tooltips as well
+	.feature-text:hover {
+		[data-md-tooltip]:before {
+			transform: translate(100%, -50%) scale(1);
+		}
+	}
+
 	[data-md-tooltip].md-tooltip--left:before {
 		left: -15px;
 		right: auto;
@@ -359,6 +380,12 @@ a.sf-button{
 	
 	[data-md-tooltip].md-tooltip--left:hover:before {
 		transform: translate(-100%, -50%) scale(1);
+	}
+
+	.feature-text:hover {
+		[data-md-tooltip].md-tooltip--left:before {
+			transform: translate(-100%, -50%) scale(1);
+		}
 	}
 
 	// tooltips in pro plan list would go off screen
