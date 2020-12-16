@@ -179,6 +179,35 @@ div{
 	margin: 0 auto;
 }
 
+#ycb-modal {
+	.modal-content {
+		width: 682px;
+
+		.modal-header {
+			border-bottom: 0px;
+
+			.modal-title {
+				font-family: 'Montserrat';
+				font-size: 16px;
+				font-weight: 400;
+				margin-bottom: 16px;
+			}
+		}
+
+		.modal-body {
+			height: 792px;
+			padding: 0;
+
+			.ycb-frame{
+				width:100%;
+				height:821px;
+				border:0px;
+				background-color:transparent;
+				margin-top: -34px;
+			}
+		}
+	}
+}
 
 //header
 .sf-header{
@@ -695,7 +724,13 @@ div{
 @media (max-width: $xs-screen) {
     @-ms-viewport {
         width: 600px;
-    }
+	}
+	
+	#ycb-modal {
+		.modal-content {
+			width: 100%;
+		}
+	}
 
 	.sf-header.larger.feature .sf-hero p{
 		margin-bottom: 405px;

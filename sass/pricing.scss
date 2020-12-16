@@ -32,7 +32,7 @@
 	background-color: #eaeaea;
 	padding: {
 		top: 40px ;
-		bottom: 20px;
+		bottom: 40px;
 	}
 
 	.features {
@@ -188,7 +188,6 @@ a.sf-button{
 	letter-spacing: 2px;
 	border-radius: 100px;
 	display: inline-block;
-	margin-bottom: 18px;
 }
 
 .item{
@@ -291,6 +290,10 @@ a.sf-button{
 }
 
 @media (max-width: $xs-screen){
+	.pro-plan {
+		margin-top: 20px;
+	}
+
 	.sf-button{
 		font-size:22px !important;
 	}
@@ -431,12 +434,16 @@ a.sf-button{
 		}
 
 		.plans {
-			padding-top: 20px;
+			padding-top: 40px;
 			display: flex;
+
+			.sf-box {
+				width: 305px;
+			}
 		}
 
-		.sf-box{
-			width: 305px;
+		.sf-box {
+			width: 95%;
 			margin-left: auto;
 			margin-right: auto;
 			margin-bottom: 40px;
