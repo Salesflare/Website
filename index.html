@@ -35,17 +35,21 @@
 
                         </div>
                     </div>
-                    <!-- endo mockup -->
+                    <!-- end mockup -->
 
                     <div class="col-md-6 col-md-pull-6 above-mockup">
                         <h1>Less work, more sales.</h1>
                         <p>
                             A simple yet powerful CRM for small businesses selling B2B.
                         </p>
-                        <div class="sf-hero-button">
-                            <a class="" href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" title="Free Trial" id="sf-homepage-signup-button">Try it for free</a>
+                        <div style="display:flex; margin-top: 48px;">
+                            <div>
+                                <a class="sf-main-button" href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" title="Free Trial" id="sf-homepage-signup-button">Try it for free</a>
+                            </div>
+                            <div>
+                                <a class="sf-secondary-button" onclick="$('.iubenda-cs-close-btn').click();analytics.track('click', {category: 'button', label: 'book-demo'});" title="Book demo" id="sf-homepage-demo-button" data-toggle="modal" data-target="#bookdemomodal">Book a demo</a>
+                            </div>
                         </div>
-
                     </div>
 
                 </div>
@@ -54,6 +58,21 @@
 
         <!-- end hero -->
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="bookdemomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Book a demo</h4>
+        </div>
+        <div class="modal-body">
+            <iframe src="https://salesflare-talk-to-us.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframesalesflare-talk-to-us" frameborder="0" allowtransparency="true" class="ycb-frame"></iframe><!--<script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://salesflare-talk-to-us.youcanbook.me"){document.getElementById("ycbmiframesalesflare-talk-to-us").style.height = event.data + "px";}}, false);</script>-->
+        </div>
+      </div>
+    </div>
+  </div>
 
     <a href="whitepaper.html" class="whitepaper-link">
         <div class="sf-header-foot">
