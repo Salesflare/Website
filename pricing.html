@@ -425,35 +425,31 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
     <div class="sf-contact">
         <div class="container">
             <div class="row title">
-                <h3 class="feature-h3">Let us help you get started</h3>
+                <h3 class="feature-h3">Have more questions?</h3>
             </div>
-            <div class="list">
-                <div class="row item">
-                    <div class="material-icons check-color check-icon">check_circle_outline</div>
-                    <div class="content">
-                        <p>Custom data imports</p>
-                    </div>
-                </div>
-                <div class="row item">
-                    <div class="material-icons check-color check-icon">check_circle_outline</div>
-                    <div class="content">
-                        <p>Integrations</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row contact">
-                <div class="tel">
-                    <img src="img/phone.png" alt=""> <a class="styless-anchor" href="tel:+19173414769"><span>+1-917-341-4769</span></a>
-                </div>
-                <div class="no-mobile italic">
-                    <span>- or -</span>
-                </div>
-                <div class="">
-                    <a href="contactus.html" class="sf-button">Contact Sales</a>
+            <p style="font-size: 20px">Are you a large team or want to book a 1-on-1 consultation?</p>
+            <div class="row contact" style="margin-top: 40px;">
+                <div>
+                    <a class="sf-button" onclick="$('.iubenda-cs-close-btn').click();analytics.track('click', {category: 'button', label: 'book-demo'});" title="Book demo" data-toggle="modal" data-target="#ycb-modal">Book a demo</a>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="ycb-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Book a demo</h4>
+        </div>
+        <div class="modal-body">
+            <iframe src="https://salesflare-talk-to-us.youcanbook.me/?noframe=true&skipHeaderFooter=true" id="ycbmiframesalesflare-talk-to-us" frameborder="0" allowtransparency="true" class="ycb-frame"></iframe><!--<script>window.addEventListener && window.addEventListener("message", function(event){if (event.origin === "https://salesflare-talk-to-us.youcanbook.me"){document.getElementById("ycbmiframesalesflare-talk-to-us").style.height = event.data + "px";}}, false);</script>-->
+        </div>
+      </div>
+    </div>
+</div>
 
     <div class="sf-faq sf-boxes ">
         <div class="container">
