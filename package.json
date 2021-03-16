@@ -1,6 +1,6 @@
 {
   "name": "Website",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "description": "The landing page of Salesflare",
   "main": "index.js",
   "scripts": {
