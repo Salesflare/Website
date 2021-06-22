@@ -76,6 +76,37 @@
 	background-color: #e74c3c;
 }
 
+a.sf-main-button {
+	@extend .sf-button;
+	width: 180px;
+	font-size: 12px;
+	font-weight: 100;
+	padding: 13px 0 13px 0;
+	letter-spacing: 2px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	display: inline-block;
+}
+
+a.sf-secondary-button {
+	@extend .sf-button;
+	background-color: transparent;
+	font-weight: 100;
+	font-size: 12px;
+	width: 180px;
+	display: inline-block;
+	border: 2px;
+	border-style: solid;
+	border-color: rgba(255,255,255,0.6);
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding: 11px 0 11px 0;
+	letter-spacing: 1.2px;
+	margin-left: 18px;
+}
+
 .feature-p{
 	margin-bottom: 32px;
 	font-size: 15px;
@@ -882,7 +913,7 @@ div{
 
 		.sf-nav-button{
 			font:{
-					size: 11.9px;
+					size: 12px;
 				};
 		}
 		.sf-menu{
@@ -890,7 +921,7 @@ div{
 
 			a, .sf-nav-button{
 				font:{
-					size: 11.9px;
+					size: 12px;
 				}
 			}
 

@@ -28,6 +28,11 @@
 	font-weight: 400;
 	z-index: 3; // activated currency hax z-index 2
 }
+
+.feature-h3 {
+	text-align: center;
+}
+
 .sf-boxes{
 	background-color: #eaeaea;
 	padding: {
@@ -47,6 +52,7 @@
 	}
 	
 	.currency-switcher {
+		text-align: center;
 		margin-bottom: 16px;
 
 		.btn {
@@ -166,28 +172,6 @@
 		}
 	}
 	
-	.row.center{
-		text-align: center;
-	}
-
-	
-}
-
-a.sf-button{
-	text-align: center;
-	@extend .styless-anchor;
-	padding: {
-		top:19px;
-		left:23px;
-		right:26px;
-		bottom:18px;
-	}
-	font-size: 10px;
-	line-height: 7px;
-	font-weight: 400;
-	letter-spacing: 2px;
-	border-radius: 100px;
-	display: inline-block;
 }
 
 .item{
@@ -250,7 +234,6 @@ a.sf-button{
 .sf-contact{
 	background-color: #ffffff;
 	padding: 40px 0;
-	text-align: center;
 
 	.list{
 		margin: 0 auto;
@@ -289,14 +272,54 @@ a.sf-button{
 	}
 }
 
+.sf-awards{
+	background-color: #ffffff;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.sf-testimonials {
+	.sf-box {
+		.content {
+			& > p {
+				margin-bottom: 26px
+			}
+
+			.author{
+				div{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				
+				img{
+					margin-right: 16px;
+					border-radius: 22px;
+					width: 43px;
+				}
+				
+				p{
+					text-align: left;
+					font-family: Montserrat;
+					font-size: 15px; /* Aproximação devido à substituição de fonte */
+					line-height: 24px;
+					font-weight: 300;
+					color:  #000000;
+				}
+			}
+		}
+	}	
+}
+
 @media (max-width: $xs-screen){
 	.pro-plan {
 		margin-top: 20px;
 	}
 
+/*
 	.sf-button{
 		font-size:22px !important;
 	}
+*/
 
 	.sf-tour{
 		h1{
@@ -446,7 +469,14 @@ a.sf-button{
 			width: 95%;
 			margin-left: auto;
 			margin-right: auto;
-			margin-bottom: 40px;
+
+			&.up-1-line {
+				margin-top: -23px;
+			}
+
+			&.up-2-line {
+				margin-top: -46px;
+			}
 
 			.header{
 				padding: {
@@ -522,7 +552,21 @@ a.sf-button{
 		}
 	}
 
-	.sf-contact{
+	.sf-guarantee {
+		.title {
+			font-size: 16px;
+			text-align: center;
+		}
+
+		.items {
+			.item {
+				width: 470px;
+				margin: auto;
+			}
+		}
+	}
+
+	.sf-contact {
 		text-align: center;
 		
 		.list{
