@@ -201,16 +201,21 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
     <div class="sf-boxes sf-pricing">
         <div class="container plan-container">
             <div class="row">
-                <h3 class="feature-h3 center">Pricing</h3>
+                <h3 class="feature-h3">Pricing</h3>
 
-                <div class="row center currency-switcher">
-                    <div class="btn-group" data-toggle="buttons">
-                        <label class="btn btn-primary active">
-                            <input type="radio">$</input>
-                        </label>
-                        <label class="btn btn-primary">
-                            <input type="radio">€</input>
-                        </label>
+                <div class="row currency-switcher">
+                    <div>
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-primary active">
+                                <input type="radio">$</input>
+                            </label>
+                            <label class="btn btn-primary">
+                                <input type="radio">€</input>
+                            </label>
+                        </div>
+                        <span class="md-tooltip" data-md-tooltip="Pricing is in euros for Europe (incl. UK) and in dollars for the rest of the world." style="position: absolute; padding-left: 8px; padding-top: 10px; padding-bottom: 10px;">
+                            <i class="material-icons  info-icon" style="font-size: 18px">&#xe88f;</i>
+                        </span>
                     </div>
                 </div>
 
@@ -246,7 +251,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                                         <span>Track emails, links and website </span>
                                         <span class="icon-container"> 
                                             visits
-                                            <span class="md-tooltip" data-md-tooltip="Track when and how your customers are digitally engaging with you. Invaluable tracking information is stored per customer and is revealed to you as real-time notifications, so you can follow up in an informed way.">
+                                            <span class="md-tooltip" data-md-tooltip="Salesflare not only tracks when people open your emails and click on them; it also shows you which pages these people visit on your site, when and for how long. Just install the email sidebar and website tracking script.">
                                                 <i class="material-icons  info-icon">&#xe88f;</i>
                                             </span>
                                         </span>
@@ -260,7 +265,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                                         <span>Use a fully featured email sidebar & mobile </span>
                                         <span class="icon-container">
                                             app
-                                            <span class="md-tooltip" data-md-tooltip="Salesflare works right in your email inbox such as Outlook and Gmail, and has a mobile application for iOS and Android too. All of this without losing any desktop features.">
+                                            <span class="md-tooltip" data-md-tooltip="Use a Salesflare sidebar directly integrated into your email inbox such as Outlook and Gmail, and download the mobile app for iOS and Android too. You can use 100% of its functionality anywhere you work.">
                                                 <i class="material-icons info-icon">&#xe88f;</i>
                                             </span>
                                         </span>
@@ -274,7 +279,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                                         <span>Send personalized email </span>
                                         <span class="icon-container">
                                             campaigns
-                                            <span class="md-tooltip" data-md-tooltip="Send personalized emails from any mailbox connected to Salesflare. Choose until when your email should send. And track the responses.">
+                                            <span class="md-tooltip" data-md-tooltip="Send personalized emails at scale from any mailbox connected to Salesflare, track the results in the dashboards, and follow up on the replies.">
                                                 <i class="material-icons info-icon">&#xe88f;</i>
                                             </span>
                                         </span>
@@ -351,9 +356,6 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                             <!-- <h3 style="height:21px;"><span></span></h3> -->
                             <p>per user / month (billed annually)</p>
                             <p><a id="open_intercom" style="cursor: pointer;" href="mailto: support@salesflare.com" target="_blank">Contact us</a> (from 5 users)</p>
-                            <!-- <div class="row center">
-                                <a href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" class="sf-button" id="sf-pricing-signup-button" style="color:#ffffff;">CONTACT US</a>
-                            </div> -->
                         </div>
                         <div class="content container wide features">
                             <p class="first-item">All features on the Pro plan, plus:</p>
@@ -402,35 +404,62 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                                 </div>
                                 
                             </div>
-                        </div>
-
-
-                    
+                        </div>                    
                 </div>
 
                 
 
                 </div>
-                <div class="row center currency-explainer" style="margin-bottom: 30px; margin-top:-20px;">
-                    Pricing is in euros for Europe (incl. UK) and in dollars for the rest of the world.
-                </div>
             </div>
-            <div class="row center">
-                <a href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" class="sf-button" id="sf-pricing-signup-button">START FREE TRIAL</a>
+            <div class="row" style="text-align: center;">
+                <a href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" class="sf-main-button" id="sf-pricing-signup-button">START FREE TRIAL</a>
+            </div>
+            <div class="sf-guarantee" style="margin-top: 40px;">
+                <div class="title" style="margin-bottom: 24px; ">Salesflare's pricing guarantee:</div>
+                <div class="items">
+                    <div class="item row">
+                        <div class="material-icons check-color check-icon">check_circle_outline</div>
+                        <div class="content">
+                            <p class="feature-text">
+                                <span>Simple, predictable pricing without hidden add-ons or limits.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item row">
+                        <div class="material-icons check-color check-icon">check_circle_outline</div>
+                        <div class="content">
+                            <p class="feature-text">
+                                <span>Only pay for what you use with fair, pro-rata billing.</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item row">
+                        <div class="material-icons check-color check-icon">check_circle_outline</div>
+                        <div class="content">
+                            <p class="feature-text">
+                                <span>Try 100% of the functionality without entering a credit card.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="sf-contact">
         <div class="container">
-            <div class="row title">
+            <div class="row">
                 <h3 class="feature-h3">Have more questions?</h3>
             </div>
-            <p style="font-size: 20px">Are you a large team or want to book a 1-on-1 consultation?</p>
-            <div class="row contact" style="margin-top: 40px;">
-                <div>
-                    <a class="sf-button" onclick="$('.iubenda-cs-close-btn').click();analytics.track('click', {category: 'button', label: 'book-demo'});" title="Book demo" data-toggle="modal" data-target="#ycb-modal">Book a demo</a>
-                </div>
+            <p style="font-size: 20px; margin-top: 24px; margin-bottom: 24px; text-align: center; line-height:26px">We're here for you. Just leave us a <a id="open_intercom" style="cursor: pointer;" href="mailto: support@salesflare.com" target="_blank">quick chat message or email</a>. We can also offer a free one-on-one demo and/or free training for you and your team.</p>
+            <p style="font-size: 20px; text-align: center; line-height:26px">We also offer an <a href="https://howto.salesflare.com/en/" target="_blank">extensive knowledge base</a>, <a href="https://www.youtube.com/watch?v=Uba8_ANo_l0&list=PLzIbkpd9Ee6w8BnwptA0jaYwJX8IHqXoB" target="_blank">tutorial videos</a>, a <a href="https://webinars.salesflare.com/how-to-use-a-crm/" target="_blank">bi-weekly training webinar</a>, as well as webinars about more specific features.</p>
+            <div style="margin-top: 40px; text-align: center;">
+                <span>
+                    <a class="sf-main-button" id="open_intercom" style="cursor: pointer;" href="mailto: support@salesflare.com" target="_blank">Contact us</a>
+                </span>
+                <span>
+                    <a class="sf-secondary-button" onclick="$('.iubenda-cs-close-btn').click();analytics.track('click', {category: 'button', label: 'book-demo'});" title="Book demo" data-toggle="modal" data-target="#ycb-modal" style="color: #838d8f; border-color: #838d8f;">Book a demo</a>
+                </span>
             </div>
         </div>
     </div>
@@ -455,7 +484,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
             <div class="row">
                 <h3 class="feature-h3 center">FAQ</h3>
             </div>
-            <div class="row">
+            <div class="row" style="margin-top: 24px;">
                 <div class="col-md-6">
                     <div class="sf-box">
                         <div class="content">
@@ -469,9 +498,9 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                 <div class="col-md-6">
                     <div class="sf-box">
                         <div class="content">
-                            <h3>What happens at the end of my trial?</h3>
+                            <h3>How do I get my team to use this?</h3>
                             <p>
-                                We’ll notify you via email before your trial ends. If you become a paying customer, you can just keep working with your account and all its data. Additionally, we’ll help you and your team to get fully onboarded and up to speed.
+                                You send email invites to your team from inside Salesflare. Setup only takes a few minutes. Once your setup is complete, team members keep sending emails and scheduling meetings as usual – Salesflare will capture this activity and make it trackable for the whole team.
                             </p>
                         </div>
                     </div>
@@ -479,19 +508,11 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="sf-box">
+                    <div class="sf-box up-1-line">
                         <div class="content">
-                            <h3>Do you do revenue sharing as well?</h3>
+                            <h3>What happens at the end of my trial?</h3>
                             <p>
-                                Yes, we do. We are serious about increasing sales performance. Therefore, we are open to share the investment and result with you. Please raise this option with us if you are interested.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="sf-box">
-                        <div class="content">
-                            <h3>How do I get my team to use this?</h3>
-                            <p>
-                                You send email invites from inside Salesflare. Setup only takes a few minutes. Once this fast setup is complete, team members keep sending emails and scheduling meetings as usual – Salesflare will capture this activity and make it trackable for the whole team.
+                                We’ll notify you via email before your trial ends. If you become a paying customer, you don't need to make a new account. You can keep working with your account and all its data that you added during the trial period. Additionally, we’ll help you and your team to get fully onboarded and up to speed... for free.
                             </p>
                         </div>
                     </div>
@@ -499,13 +520,43 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                 <div class="col-md-6">
                     <div class="sf-box">
                         <div class="content">
-                            <h3>What is the difference between the prefilled data and the custom data imports?</h3>
+                            <h3>Are there any limits to the amount of contacts I can have?</h3>
                             <p>
-                                <b>Prefilled:</b> Salesflare connects with your email system and identifies accounts and contacts you are currently selling to. These are automatically enriched with contact information. Opportunities are added and your latest interactions are mapped.
+                                In Salesflare, there are no hidden limits to the amount of contacts, users, email templates, tracked emails, sent emails, custom fields, workflows, dashboards, or even sales pipelines.  We won't hit you with any unexpected financial surprises.
                             </p>
-                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sf-box up-1-line">
+                        <div class="content">
+                            <h3>Are there any features we need to pay extra for?</h3>
                             <p>
-                                <b>Custom data imports:</b> You deliver your existing customer data. We import it.
+                                The pricing plans are exactly as listed above. There will be no features we will suddenly charge you extra for that will not be listed on this page. We consider these kinds of business practices to be deeply disrespectful to you as a customer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="sf-box">
+                        <div class="content">
+                            <h3>Do you charge for onboarding us?</h3>
+                            <p>
+                                No. Getting onboarded properly is key to your long term success with Salesflare and we are 100% here to help you with it, entirely free of charge. We're even happy to organize a one-on-one training session for your whole team. Just ask for it [on the chat](mailto link that opens up chat like above).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="sf-box up-2-line">
+                        <div class="content">
+                            <h3>What is the cancellation policy?</h3>
+                            <p>
+                                You can cancel your ongoing plan whenever you want and you’ll stop being charged immediately. There is no need to sign a multi-year contract, or to alert us months before the next renewal. 
                             </p>
                         </div>
                     </div>
@@ -513,6 +564,78 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
             </div>
         </div>
     </div>
+    <div class="sf-awards">
+        <div class="container">
+            <div class="row">
+                <h3 class="feature-h3">Here are some of the awards Salesflare has received</h3>
+            </div>
+            <div style="margin-top: 16px;">
+                <span>
+                    <img src="img/g2-easiest-to-use.svg" alt="" loading="lazy" style="width: 90px; margin: 0 16px;">
+                </span>
+                <span>
+                    <img src="img/g2-most-implementable.svg" alt="" loading="lazy" style="width: 90px; margin: 0 16px;">
+                </span>
+                <span>
+                    <img src="img/g2-best-support.svg" alt="" loading="lazy" style="width: 90px; margin: 0 16px;">
+                </span>
+                <span>
+                    <img src="img/softwareworld-top-rated.png" alt="" loading="lazy" style="width: 101px; margin: 0 16px;">
+                </span>
+                <span>
+                    <img src="img/capterra-best-value.png" alt="" loading="lazy" style="width: 123px;">
+                </span>
+                <span>
+                    <img src="img/softwareadvice-most-recommended.png" alt="" loading="lazy" style="width: 124px;">
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sf-testimonials sf-boxes ">
+        <div class="container">
+            <div class="row">
+                <h3 class="feature-h3 center">Trusted by thousands of sales people like you</h3>
+            </div>
+            <div class="row" style="margin-top: 24px;">
+                <div class="sf-box">
+                    <div class="content" style="text-align: center;">
+                        <p>
+                            'Salesflare reminded me to chase up a warm lead and I won the deal. I'd forgotten about the proposal I had submitted due to being so busy!'
+                        </p>
+                        <div class="author">
+                            <div>
+                                <img src="img/testimonial-elliott-porter.jpg" alt="Elliot Porter - Weblake Interactive Ltd." loading="lazy">
+                            </div>
+                            <div>
+                                <p>Elliot Porter</p>
+                                <p>Weblake Interactive Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sf-box">
+                    <div class="content" style="text-align: center;">
+                        <p>
+                            'Salesflare improves my bottom line by providing a clear system to work with prospects.'
+                        </p>
+                        <div class="author">
+                            <div>
+                                <img src="img/testimonial-boris-agranovich.jpg" alt="Boris Agranovich - Global Risk Community" loading="lazy">
+                            </div>
+                            <div>
+                                <p>Boris Agranovich</p>
+                                <p>Global Risk Community</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- continuing the tour -->
     <div class="tour-wrapper">
         <a href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" id="sf-tour-signup">
