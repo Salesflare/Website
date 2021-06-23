@@ -73,6 +73,12 @@
 			background-color: #f5f6f6;
 			border-color: #858f91;
 		}
+
+		.md-tooltip {
+			position: absolute;
+			padding-left: 8px;
+			padding-top: 11px;
+		}
 	}
 
 	.sf-box{
@@ -324,6 +330,14 @@
 	.sf-tour{
 		h1{
 			font-size: 38px !important;
+		}
+	}
+
+	.sf-boxes {
+		.currency-switcher {
+			.md-tooltip {
+				padding-top: 4px;
+			}
 		}
 	}
 
