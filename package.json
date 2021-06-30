@@ -24,9 +24,10 @@
     "gulp-file-include": "^2.3.0",
     "gulp-gh-pages-will": "^0.5.5",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.35.1"
   },
   "dependencies": {}
 }

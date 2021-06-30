@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 var ghPages = require('gulp-gh-pages-will');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var sourcemaps = require('gulp-sourcemaps');
 var fileInclude = require('gulp-file-include');
 var uglify = require('gulp-uglify');
@@ -16,7 +16,7 @@ gulp.task('styles', function() {
 
 	return gulp.src('sass/*.scss')
 		.pipe(sourcemaps.init())
-		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+		.pipe(sass.sync({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/css'));
 });
@@ -42,10 +42,10 @@ gulp.task('html', function() {
 
 
 gulp.task('fav', (done) => {
-	
+
 	gulp.src('fav/*.ico')
 		.pipe(gulp.dest('dist'));
-	
+
 	gulp.src(['fav/**.*', '!fav/*.ico'])
 		.pipe(gulp.dest('dist/img/icon'));
 
