@@ -80,7 +80,8 @@ for (var i = 0; i < querystring.length; i++) {
 if (utms["utm_campaign"]) { window.intercomSettings.utm_campaign = utms["utm_campaign"]; }
 if (utms["utm_medium"]) { window.intercomSettings.utm_medium = utms["utm_medium"]; }
 if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"]; }
-window.intercomSettings.custom_launcher_selector = '#open_intercom'
+window.intercomSettings.custom_launcher_selector = '#open_intercom';
+window.intercomSettings.hide_default_launcher = false;
 </script>
 
 <!-- Segment -->
@@ -116,16 +117,13 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
         <div class="row">
             <ul>
                 <li>
-                    <a href="feature1.html">Product Tour</a>
+                    <a href="feature1">Product</a>
                 </li>
                 <li>
-                    <a href="pricing.html">Pricing</a>
+                    <a href="pricing">Pricing</a>
                 </li>
                 <li>
                     <a href="https://blog.salesflare.com">Blog</a>
-                </li>
-                <li>
-                    <a href="whitepaper.html">Whitepaper</a>
                 </li>
                 <li>
                     <a href="https://app.salesflare.com/#/login">Login</a>
@@ -144,7 +142,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
 
         <!-- logo -->
         <div class="sf-logo">
-            <a href="index.html">
+            <a href="/">
                 <img src="img/nav-logo.png" alt="Home" />
             </a>
         </div>
@@ -153,10 +151,10 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
         <div class="sf-menu">
             <ul>
                 <li>
-                    <a href="feature1.html">Product Tour</a>
+                    <a href="feature1">Product</a>
                 </li>
                 <li class="no-mobile">
-                    <a href="pricing.html">Pricing</a>
+                    <a href="pricing">Pricing</a>
                 </li>
                 <li class="no-mobile no-margin-right">
                     <a href="https://blog.salesflare.com">Blog</a>
@@ -239,7 +237,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
     </div>
 </div>
 
-    <a href="whitepaper.html" class="whitepaper-link">
+    <a href="whitepaper" class="whitepaper-link">
         <div class="sf-header-foot">
             <div class="container">
                 <div class="row">
@@ -296,7 +294,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
             <p>Quick overview of Salesflare</p>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <a href="feature1.html">
+                    <a href="feature1">
                         <div class="sf-box">
                             <div class="box-content">
                                 <div class="row">
@@ -317,7 +315,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                     </a>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <a href="feature2.html">
+                    <a href="feature2">
                         <div class="sf-box">
                             <div class="box-content">
                                 <div class="row">
@@ -340,7 +338,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
             </div>
             <div class="row">
                 <div class="col-md-6 col-xs-12">
-                    <a href="feature3.html">
+                    <a href="feature3">
                         <div class="sf-box">
                             <div class="box-content">
                                 <div class="row">
@@ -361,7 +359,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                     </a>
                 </div>
                 <div class="col-md-6 col-xs-12">
-                    <a href="feature4.html">
+                    <a href="feature4">
                         <div class="sf-box">
                             <div class="box-content">
                                 <div class="row">
@@ -418,7 +416,7 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
         </div>
     </div>
 
-    <a href="feature1.html">
+    <a href="feature1">
         <div class="sf-tour">
             <div class="container">
                 <div class="row">
@@ -470,13 +468,13 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                             <a href="https://blog.salesflare.com" target="_blank" onclick="analytics.track('click', {category: 'button', label: 'blog'});" rel="noopener">Blog</a>
                         </li>
                         <li>
-                            <a href="feature1.html">Product Tour</a>
+                            <a href="feature1">Product</a>
                         </li>
                         <li>
                             <a href="https://integrations.salesflare.com/" rel="noopener">Integrations</a>
                         </li>
 						<li>
-                            <a href="pricing.html">Pricing</a>
+                            <a href="pricing">Pricing</a>
                         </li>
 						<li>
                             <a href="compare">Comparisons</a>
@@ -485,13 +483,13 @@ window.intercomSettings.custom_launcher_selector = '#open_intercom'
                             <a href="https://howto.salesflare.com" target="_blank" rel="noopener">Knowledge base</a>
                         </li>
                         <li>
-                            <a href="terms.html" target="_blank" rel="noopener">Terms of Service</a>
+                            <a href="terms" target="_blank" rel="noopener">Terms of Service</a>
                         </li>
                         <li>
-                            <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+                            <a href="privacy" target="_blank" rel="noopener">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="contactus.html">Contact Us</a>
+                            <a href="contactus">Contact Us</a>
                         </li>
                     </ul>
                 </div>
