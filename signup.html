@@ -87,7 +87,16 @@ window.intercomSettings.hide_default_launcher = false;
 <script type="text/javascript">
   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
   analytics.load("zVGLbGQzXGVrjNwVG6T0peeRW4moR6Ob");
-  analytics.page()
+  window.gaClientId = document.cookie.split('; ').find(row => row.startsWith('_ga='))?.split('=')[1].split('.').slice(2).join('.');
+  analytics.page(null, null, { gaClientId: window.gaClientId });
+  // custom trackLink function to make sure track call completes before link is opened
+  window.trackLink = function(event, label) {
+    if ((event.target.target === '' || event.target.target === '_self') && event.target.href !== '') {
+        event.preventDefault();
+        setTimeout(function() {window.location.href = event.target.href;}, 300);
+    }
+    window.analytics.track('click', {category: 'button', label: label, gaClientId: window.gaClientId});
+  };
   }}();
 </script>
 
@@ -168,7 +177,7 @@ window.intercomSettings.hide_default_launcher = false;
         <div class="sf-menu sf-menu-actions no-mobile">
             <ul>
                 <li>
-                    <a href="https://app.salesflare.com/#/signup/" onclick="analytics.track('click', {category: 'button', label: 'sign-up'});" class="sf-nav-button" id="sf-menu-signup-button">Try it for free</a>
+                    <a href="https://app.salesflare.com/#/signup/" onclick="window.trackLink(event, 'sign-up');" class="sf-nav-button" id="sf-menu-signup-button">Try it for free</a>
                 </li>
                 <li>
                     <a href="https://app.salesflare.com/#/login">Login</a>
@@ -246,7 +255,7 @@ window.intercomSettings.hide_default_launcher = false;
                     <h4 class="only-mobile">NAVIGATION</h4>
                     <ul>
                         <li>
-                            <a href="https://blog.salesflare.com" target="_blank" onclick="analytics.track('click', {category: 'button', label: 'blog'});" rel="noopener">Blog</a>
+                            <a href="https://blog.salesflare.com" target="_blank" onclick="window.trackLink(event, 'blog');" rel="noopener">Blog</a>
                         </li>
                         <li>
                             <a href="feature1">Product</a>
