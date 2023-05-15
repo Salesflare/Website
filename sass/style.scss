@@ -221,7 +221,7 @@ div{
 				font-family: 'Montserrat';
 				font-size: 16px;
 				font-weight: 400;
-				margin-bottom: 16px;
+				margin-bottom: 32px;
 			}
 		}
 
@@ -236,6 +236,10 @@ div{
 				background-color:transparent;
 				margin-top: -34px;
 			}
+		}
+		
+		.close {
+			margin-top: 0px;
 		}
 	}
 }
