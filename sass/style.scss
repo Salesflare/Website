@@ -109,7 +109,12 @@ a.sf-secondary-button {
 
 .feature-p{
 	margin-bottom: 32px;
-	font-size: 15px;
+	font-size: inherit;
+}
+
+.feature-h3{
+	@extend .black;
+	margin-bottom: 16px;
 }
 
 .italic{
@@ -122,11 +127,6 @@ a.sf-secondary-button {
 
 .bold{
 	font-weight: 700;
-}
-
-.feature-h3{
-	@extend .black;
-	margin-bottom: 16px;
 }
 
 .underline{
@@ -774,7 +774,7 @@ div{
 		overflow-x: hidden;
 	}
 	.feature-h3{
-		font-size: 18px;
+		font-size: inherit;
 	}
 	.open-menu{
 		color: #ffffff;
