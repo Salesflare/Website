@@ -167,6 +167,10 @@
 		font-weight: 500;
 		margin-bottom: 16px;
 	}
+	h3{
+		text-align: center;
+		color: black;
+	}
 	p {
 		text-align: center;
 		font-family: 'Montserrat';
@@ -267,7 +271,7 @@
 
 .tab + label {
 	font-family: 'Montserrat';
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	cursor: pointer;
 	border-bottom: 1px solid #838d8f;
@@ -343,7 +347,7 @@
 	}
 
 	.tab-description {
-		font-size: 21px;
+		font-size: 20px;
 		color: #07152c;
 		line-height: initial;
 		font-family: 'Montserrat';
@@ -356,7 +360,8 @@
 	}
 
 	h3 {
-		font-size: 18px;
+		text-align: start;
+		font-size: 16px;
 		color: #3c3d41;
 	}
 
@@ -711,9 +716,7 @@
 		padding-bottom: 53px;
 		
 		h3{
-			margin-left: 132px;
-			margin-bottom: 52px;
-			margin-left: 411px;
+			text-align: center;
 		}
 
 		.comment{
