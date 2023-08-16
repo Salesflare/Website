@@ -260,6 +260,7 @@
 }
 
 .tab:checked + label {
+	font-weight: 700;
 	color: #e74c3c;
     border-bottom: 3px solid #e74c3c;
 	cursor: default;
@@ -269,6 +270,7 @@
 .tab + label {
 	font-family: 'Montserrat';
 	font-size: 18px;
+	font-weight: 400;
 	cursor: pointer;
 	border-bottom: 1px solid #838d8f;
 	display: block;
@@ -691,7 +693,7 @@
 	}
 
 	.box-button{
-		padding-top: 7px;
+		padding-top: 4px;
 	}
 
 	.sf-why{
