@@ -354,9 +354,12 @@
 		padding: 16px 16px 32px 0;
 	}
 
+	figure {
+		padding-bottom: 32px;
+	}
+
 	img {
 		width: 100%;
-		padding-bottom: 32px;
 	}
 
 	h3 {
@@ -568,6 +571,10 @@
 		}
 	}
 
+	.box-button{
+		font-size: 18px;
+	}
+
 	.sf-news{
 		p{
 			font-size: 24px;
@@ -703,6 +710,10 @@
 		.no-margin-bottom{
 			margin-bottom: 0;
 		}
+	}
+
+	.box-button{
+		padding-top: 3px;
 	}
 
 	.sf-why{
