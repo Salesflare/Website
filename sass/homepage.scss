@@ -230,7 +230,7 @@
 .box-button{
 	@extend .styless-anchor;
 	font-family: Montserrat;
-	font-size: 16px;
+	font-size: 14px;
 	color: #e74c3c;
 	cursor: pointer;
 	font-weight: 700;
@@ -396,7 +396,17 @@
 	}
 
 	.tab-content {
+		.tab-description {
+			font-size: 22px;
+		}
+
+		h3 {
+			font-size: 20px;
+		}
+
 		p {
+			font-size: 18px;
+			line-height: 26px;
 			margin-bottom: 16px;
 		}
 	
@@ -693,10 +703,6 @@
 		.no-margin-bottom{
 			margin-bottom: 0;
 		}
-	}
-
-	.box-button{
-		padding-top: 4px;
 	}
 
 	.sf-why{
