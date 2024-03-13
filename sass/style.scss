@@ -244,7 +244,7 @@ div{
 				margin-top: -34px;
 			}
 		}
-		
+
 		.close {
 			margin-top: 0px;
 		}
@@ -514,9 +514,11 @@ div{
 			margin-right: 13px;
 		}
 
-		.twitter-icon{
-			content: url('../img/twitter.svg');
-			margin-right: 8px,
+		.x-icon {
+			content: url('../img/x.svg');
+			margin: 0 10px 1px 3px;
+			height: 13px;
+			width: 13px;
 		}
 
 		.youtube-icon{
@@ -767,7 +769,7 @@ div{
     @-ms-viewport {
         width: 600px;
 	}
-	
+
 	#ycb-modal {
 		.modal-content {
 			width: 100%;
