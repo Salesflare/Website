@@ -64,7 +64,10 @@
       window.intercomSettings.user_hash = parsedValue.user_hash;
       window.intercomSettings.user_id = parsedValue.user_id;
 
-      Intercom('update', window.intercomSettings);
+      // Only update Intercom if it's initialized
+      if (typeof Intercom === 'function') {
+        Intercom('update', window.intercomSettings);
+      }
     }
     catch (e) {
       console.error('Error parsing intercom hash cookie', e);
