@@ -70,6 +70,8 @@ for (var i = 0; i < querystring.length; i++) {
 }
 
 // Add UTM parameters to the Intercom object if they are not null
+window.intercomSettings.api_base = "https://api-iam.intercom.io";
+window.intercomSettings.app_id = "nhqftro2";
 if (utms["utm_campaign"]) { window.intercomSettings.utm_campaign = utms["utm_campaign"]; }
 if (utms["utm_medium"]) { window.intercomSettings.utm_medium = utms["utm_medium"]; }
 if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"]; }
