@@ -463,6 +463,23 @@ with them now. That’s for sure.”</p>
     }
 
   }
+  
+  if (getCookie('salesflare-intercom-hash')) {
+    try {
+      let cookieValue = getCookie('salesflare-intercom-hash');
+      let parsedValue = JSON.parse(decodeURIComponent(cookieValue));
+
+      window.intercomSettings.user_hash = parsedValue.user_hash;
+      window.intercomSettings.user_id = parsedValue.user_id;
+
+      Intercom('update', window.intercomSettings);
+    }
+    catch (e) {
+      console.error('Error parsing intercom hash cookie', e);
+    }
+  }
+
+  window.intercomSettings.user_hash = getCookie('salesflare-intercom-hash');
 
   if (getCookie('campaign')) {
     if (document.getElementById('sf-menu-signup-button')) {
