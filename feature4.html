@@ -529,8 +529,6 @@ window.intercomSettings.hide_default_launcher = false;
     }
   }
 
-  window.intercomSettings.user_hash = getCookie('salesflare-intercom-hash');
-
   if (getCookie('campaign')) {
     if (document.getElementById('sf-menu-signup-button')) {
         document.getElementById('sf-menu-signup-button').href += '?campaign=' + getCookie('campaign');
