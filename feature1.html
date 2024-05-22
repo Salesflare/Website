@@ -75,11 +75,18 @@ for (var i = 0; i < querystring.length; i++) {
 }
 
 // Add UTM parameters to the Intercom object if they are not null
+window.intercomSettings.api_base = "https://api-iam.intercom.io";
+window.intercomSettings.app_id = "nhqftro2";
 if (utms["utm_campaign"]) { window.intercomSettings.utm_campaign = utms["utm_campaign"]; }
 if (utms["utm_medium"]) { window.intercomSettings.utm_medium = utms["utm_medium"]; }
 if (utms["utm_source"]) { window.intercomSettings.utm_source = utms["utm_source"]; }
 window.intercomSettings.custom_launcher_selector = '#open_intercom';
 window.intercomSettings.hide_default_launcher = false;
+</script>
+
+<!-- Intercom -->
+<script>
+  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/nhqftro2';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 </script>
 
 <!-- Segment -->
@@ -472,7 +479,10 @@ with them now. That’s for sure.”</p>
       window.intercomSettings.user_hash = parsedValue.user_hash;
       window.intercomSettings.user_id = parsedValue.user_id;
 
-      Intercom('update', window.intercomSettings);
+      // Only update Intercom if it's initialized
+      if (typeof Intercom === 'function') {
+        Intercom('update', window.intercomSettings);
+      }
     }
     catch (e) {
       console.error('Error parsing intercom hash cookie', e);
