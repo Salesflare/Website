@@ -510,8 +510,14 @@ div{
 
 		.facebook-icon{
 			content: url('../img/facebook.svg');
-			margin-left: 5px;
-			margin-right: 13px;
+			margin: 0 13px 0px 5px;
+		}
+		
+		.linkedin-icon{
+			content: url('../img/linkedin.svg');
+			margin: 0 10px 2px 3px;
+			height: 13px;
+			width: 13px;
 		}
 
 		.x-icon {
@@ -523,7 +529,7 @@ div{
 
 		.youtube-icon{
 			content: url('../img/youtube.svg');
-			margin-right: 8px;
+			margin: 0 8px 0px 0px;
 			width: 18px;
 			height: 15px;
 		}
