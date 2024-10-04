@@ -406,6 +406,8 @@ window.intercomSettings.hide_default_launcher = false;
 
 <!-- Source tracking for Salesflare site -->
 
+<!-- Source tracking for Salesflare site -->
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Check if the script has already run on this page load
@@ -465,10 +467,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Function to update an element's href with new query parameters
         var updateHref = function(element, param, value) {
             if (element) {
-                // Ensure we preserve any hash fragment by updating only the search parameters
+                // Ensure we preserve any hash fragment by keeping it in front of the search parameters
                 var url = new URL(element.href);
-                url.searchParams.set(param, value);
-                element.href = url.origin + url.pathname + '?' + url.searchParams.toString() + (url.hash ? url.hash : '');
+                element.href = url.origin + url.pathname + (url.hash ? url.hash : '') + (url.searchParams.has(param) ? '' : '?' + param + '=' + encodeURIComponent(value));
             }
         };
 
