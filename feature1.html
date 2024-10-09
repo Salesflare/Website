@@ -450,12 +450,6 @@ with them now. That’s for sure.”</p>
 
 <!-- Source tracking for Salesflare site -->
 
-<!-- Source tracking for Salesflare site -->
-
-<!-- Source tracking for Salesflare site -->
-
-<!-- Source tracking for Salesflare site -->
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     // Check if the script has already run on this page load
@@ -481,7 +475,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // If campaign details are not present in the URL, set default values
         if (!params['utm_campaign'] && !params['utm_source'] && !params['utm_medium']) {
             // Set the campaign to the current page name or 'homepage' if it's the root
-            params['utm_campaign'] = window.location.pathname.split('/').pop() || 'homepage';
+            params['utm_campaign'] = window.location.pathname.replace(/\/$/, '').split('/').pop() || 'homepage';
             params['utm_source'] = 'website';
             params['utm_medium'] = 'page';
         }
