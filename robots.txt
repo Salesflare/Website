@@ -1,4 +1,7 @@
 User-Agent: *
 Disallow: 
 
+User-Agent: Yandex
+Clean-param: utm
+
 Sitemap: http://salesflare.com/sitemap.xml
